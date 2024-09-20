@@ -1,12 +1,12 @@
-<div class="md:col-span-3 bg-white shadow-xl relative group overflow-hidden">
+<div class="xs:col-span-6 md:col-span-4 lg:col-span-3 bg-white xs:shadow-lg md:shadow-xl relative group overflow-hidden">
   {{ if website }}
     <a 
       href="{{ website }}" 
       title="{{ title }}"
       class="!no-underline absolute z-20 w-full h-full flex flex-col items-center justify-center text-center opacity-0 bg-transparent group-hover:bg-white transition-all group-hover:opacity-100 group-hover:duration-700 group-hover:delay-300">
       <span class="flex flex-col items-center justify-center px-10"> 
-        <span class="block">
-          <strong>{{ title }}</strong>
+        <span class="block text-balance">
+          <strong class="block">{{ title }}</strong>
         </span>
         {{ if division }}
           <span class="block">
@@ -19,7 +19,7 @@
     <div class="absolute z-20 w-full h-full flex flex-col items-center justify-center text-center opacity-0 bg-transparent group-hover:bg-white transition-all group-hover:opacity-100 group-hover:duration-700 group-hover:delay-300">
       <span class="flex flex-col items-center justify-center px-10"> 
         <span class="block">
-          <strong>{{ title }}</strong>
+          <strong class="block">{{ title }}</strong>
         </span>
         {{ if division }}
           <span class="block">
