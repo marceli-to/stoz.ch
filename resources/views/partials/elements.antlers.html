@@ -1,0 +1,15 @@
+{{ if type == 'editor' }}
+  {{ partial:editor }}
+{{ /if }}
+
+{{ if type == 'latest_news' }}
+  {{ partial:news/latest }}
+{{ /if }}
+
+{{ if type == 'client_list' }}
+  {{ partial:clients/list }}
+{{ /if }}
+
+{{ if type == 'team_member' }}
+  {{ partial:team/member }}
+{{ /if }}

@@ -1,0 +1,9 @@
+{{ collection from="clients" as="clients" sort="order:asc" }}
+  {{ if clients }}
+    <div class="md:grid md:grid-cols-12 md:gap-20">
+      {{ clients }} 
+        {{ partial:clients/item }}
+      {{ /clients }}
+    </div>
+  {{ /if }}
+{{ /collection }}

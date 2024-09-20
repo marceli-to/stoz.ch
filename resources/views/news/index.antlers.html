@@ -1,0 +1,12 @@
+
+{{ page_elements }}
+  {{ partial:elements }}
+{{ /page_elements }}
+
+{{ collection from="news" as="news" sort="date:desc" }}
+  {{ if news }}
+    {{ news }} 
+      {{ partial:news/article }}
+    {{ /news }}
+  {{ /if }}
+{{ /collection }}

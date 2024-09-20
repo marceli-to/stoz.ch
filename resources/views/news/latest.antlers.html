@@ -1,0 +1,7 @@
+{{ collection from="news" as="news" id:is="{{ news_article:id }}" }}
+  {{ if news }}
+    {{ news }}
+      {{ partial:news/article is_latest="true" }}
+    {{ /news }}
+  {{ /if }}
+{{ /collection }}

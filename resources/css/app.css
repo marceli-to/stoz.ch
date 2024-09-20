@@ -1,0 +1,66 @@
+@import "typo/webfonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+main {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+strong {
+  @apply font-bold;
+}
+
+main p:not(:last-child) {
+  @apply mb-20;
+}
+
+main a {
+  @apply hover:underline underline-offset-4 decoration-1
+}
+
+main ul:not(main nav ul) {
+  @apply list-disc m-0 ml-20 mb-15;
+}
+
+main ul:not(main nav ul) p {
+  @apply mb-0 inline;
+}
+
+main li:not(main nav li) {
+  @apply mb-4
+}
+
+
+/* Helpers */
+.nobr {
+  @apply whitespace-nowrap;
+}
+
+/* Page specific */
+.team-member {
+  @apply grid;
+  grid-template-areas: "stack";
+
+  & > div,
+  & > figure {
+    @apply content-center;
+    grid-area: stack;
+  }
+
+  & > div {
+    @apply ml-20 lg:ml-100;
+
+    & > * {
+      @apply mb-5;
+    }
+  }
+}

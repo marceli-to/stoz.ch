@@ -1,0 +1,9 @@
+title: 'Page claim'
+fields:
+  -
+    handle: page_claim
+    field:
+      type: textarea
+      display: Seitenclaim
+      instructions: 'Mehrzeiliger Untertitel (optional)'
+      instructions_position: below

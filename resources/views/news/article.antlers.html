@@ -1,0 +1,38 @@
+<article class="mb-50 flex flex-col gap-10">
+  
+  <h2>{{ title }}</h2>
+  
+  {{ if !is_latest }}
+    <div>
+      {{ date | iso_format("DD.MM.YYYY") }}
+    </div>
+  {{ /if }}
+
+  {{ if lead }}
+    <div>
+      <strong>{{ lead | nl2br }}</strong>
+    </div>
+  {{ /if }}
+
+  {{ if text }}
+    <div>{{ text }}</div>
+  {{ /if }}
+
+  {{ if image }}
+    {{ partial:media/image 
+      :image="image" 
+      class="w-full h-auto object-cover"
+      preset="focal-square" }}
+  {{ /if }}
+
+  {{ if is_latest }}
+  <a href="/news">
+    More about us
+  </a>
+  {{ else }}
+    <a href="{{ url }}" target="_blank">
+      Share URL
+    </a>
+  {{ /if }}
+
+</article>

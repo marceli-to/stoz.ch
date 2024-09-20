@@ -1,0 +1,10 @@
+{{ if {parent:page_title} }}
+  {{ partial:headings/title page_title="{{ parent:page_title }}" }}
+{{ /if }}
+
+{{ if {parent:page_claim} }}
+  {{ partial:headings/claim page_claim="{{ parent:page_claim }}" }}
+{{ /if }}
+
+{{ partial:news/article }}
+<a href="/news">Alle News anzeigen</a>

@@ -1,0 +1,9 @@
+title: 'Page title'
+fields:
+  -
+    handle: page_title
+    field:
+      type: text
+      display: Seitentitel
+      instructions: 'Titel in schwarzem Balken (optional)'
+      instructions_position: below

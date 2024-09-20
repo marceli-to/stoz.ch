@@ -1,0 +1,20 @@
+<article class="team-member mb-40 last-of-type:mb-0">
+  {{ partial:media/image 
+    :image="image" 
+    class="w-full h-auto object-cover"
+    wrapperClass="shadow-2xl"
+    preset="focal-16-6" }}
+  <div>
+    <h3>{{ firstname }} {{ name }}</h3>
+    {{ if role }}
+      <div>{{ role }}</div>
+    {{ /if }}
+    {{ if email }}
+      <div>
+        <a href="mailto:{{ email }}" title="E-Mail an {{ firstname }} {{ name }}">
+          E-Mail
+        </a>
+      </div>
+    {{ /if }}
+  </div>
+</article>

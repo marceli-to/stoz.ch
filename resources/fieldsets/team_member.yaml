@@ -1,0 +1,37 @@
+title: Teammitglied
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+      folder: team
+  -
+    handle: firstname
+    field:
+      type: text
+      display: Vorname
+      width: 50
+      validate:
+        - required
+  -
+    handle: name
+    field:
+      type: text
+      display: Name
+      width: 50
+      validate:
+        - required
+  -
+    handle: role
+    field:
+      type: text
+      display: Position
+  -
+    handle: email
+    field:
+      input_type: email
+      type: text
+      display: E-Mail

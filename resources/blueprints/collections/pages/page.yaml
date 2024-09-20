@@ -1,0 +1,111 @@
+title: Page
+tabs:
+  main:
+    display: Content
+    sections:
+      -
+        display: Content
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Titel
+              localizable: true
+          -
+            import: page_title
+          -
+            import: page_claim
+          -
+            handle: page_elements
+            field:
+              type: replicator
+              display: Inhalte
+              localizable: true
+              collapse: true
+              sets:
+                main_elements:
+                  display: Hauptelemente
+                  icon: addon-boxes-stack
+                  sets:
+                    page_title:
+                      display: Seitentitel
+                      instructions: 'Seitentitel in schwarzem Balken hinzufügen'
+                      icon: text-formatting-all-caps
+                      fields:
+                        -
+                          import: page_title
+                    page_claim:
+                      display: Seitenclaim
+                      instructions: 'Seitenclaim hinzufügen'
+                      icon: text-formatting-input-signature
+                      fields:
+                        -
+                          import: page_claim
+                    latest_news:
+                      display: 'Latest News'
+                      icon: text-formatting-image-right
+                      fields:
+                        -
+                          handle: news_article
+                          field:
+                            max_items: 1
+                            collections:
+                              - news
+                            type: entries
+                            display: Artikel
+                special_elements:
+                  display: Spezialelemente
+                  icon: addon-boxes-stack
+                  sets:
+                    client_list:
+                      display: Kundenliste
+                      instructions: 'Liste der Kunden hinzufügen.'
+                      icon: media-image-picture-orientation
+                      fields: {  }
+                    team_member:
+                      display: Teammitglied
+                      instructions: 'Teammitglied hinzufügen'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: team_member
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
+  settings:
+    display: Settings
+    sections:
+      -
+        display: Settings
+        fields:
+          -
+            import: settings
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
