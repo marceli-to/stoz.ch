@@ -19,8 +19,7 @@ export default {
       },
 
       fontFamily: {
-        // 'futura-pt': ['futura-pt', ...defaultTheme.fontFamily.sans],
-        // 'futura-pt-condensed': ['futura-pt-condensed', ...defaultTheme.fontFamily.sans],
+        'neue-haas-unica': ['neue-haas-unica', ...defaultTheme.fontFamily.sans],
       },
 
       colors: {
@@ -32,6 +31,8 @@ export default {
         'base': '1rem',   // 16px 
         'md': '1.125rem', // 18px
         'lg': '1.625rem', // 26px
+
+        '4xl': '4.5rem', // 72px
       },
       
       zIndex: {

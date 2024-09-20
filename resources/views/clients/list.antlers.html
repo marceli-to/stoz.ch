@@ -1,9 +1,11 @@
-{{ collection from="clients" as="clients" sort="order:asc" }}
-  {{ if clients }}
-    <div class="md:grid md:grid-cols-12 md:gap-20">
+<div class="mt-40">
+  {{ collection from="clients" as="clients" sort="order:asc" }}
+    {{ if clients }}
+    <div class="md:grid md:grid-cols-12 md:gap-30">
       {{ clients }} 
         {{ partial:clients/item }}
       {{ /clients }}
     </div>
   {{ /if }}
 {{ /collection }}
+</div>

@@ -16,11 +16,11 @@ h2 {
 }
 
 strong {
-  @apply font-bold;
+  @apply font-semibold;
 }
 
 main p:not(:last-child) {
-  @apply mb-20;
+  @apply mb-25;
 }
 
 main a {
