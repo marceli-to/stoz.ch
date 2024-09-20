@@ -45,6 +45,12 @@ main li:not(main nav li) {
   @apply whitespace-nowrap;
 }
 
+/* Prevent flickering on hover */
+.translate-z-0 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
 /* Page specific */
 .team-member {
   @apply grid;
