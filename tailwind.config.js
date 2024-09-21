@@ -14,6 +14,12 @@ export default {
   theme: {
     extend: {
 
+      boxShadow: {
+        'lg': '0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);',
+        'xl': '0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);',
+        '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.3);'
+      },
+
       screens: {
         'xs': '480px',
       },
@@ -44,6 +50,7 @@ export default {
         '150': 150,
         '200': 200,
       },
+      
     },
 
     spacing: {

@@ -1,3 +1,53 @@
+{{# <style>
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+  @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+  }
+</style>
+<div class="marquee bg-[url(../patterns/dots.png)] bg-[length:auto_62px] w-full h-62 flex overflow-hidden">
+  <span class="text-3xl text-white uppercase font-bold">Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
+</div> #}}
+{{# <marquee class="bg-[url(../patterns/dots.png)] bg-[length:auto_62px] w-full h-62 pb-4">
+  <span class="text-4xl leading-[0.8] text-white uppercase font-extrabold">Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
+</marquee> #}}
+<style>
+  .marquee-container {
+      width: 100%;
+      height: 62px;
+      overflow: hidden;
+  }
+
+  .marquee-content {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 0%;
+      animation: marquee 60s linear infinite;
+  }
+
+
+
+  @keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+</style>
+<div class="marquee-container bg-[url(../patterns/dots.png)] bg-[length:auto_62px]">
+  <div class="marquee-content">
+      <span class="text-4xl leading-[0.75] text-white uppercase font-extrabold">
+        Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
+  </div>
+</div>
+
+
 <footer>
 
 </footer>
