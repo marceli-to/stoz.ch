@@ -16,36 +16,38 @@
   <span class="text-4xl leading-[0.8] text-white uppercase font-extrabold">Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
 </marquee> #}}
 <style>
-  .marquee-container {
-      width: 100%;
-      height: 62px;
-      overflow: hidden;
+
+
+[data-animation="marquee"] {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
   }
-
-  .marquee-content {
-      display: inline-block;
-      white-space: nowrap;
-      padding-left: 0%;
-      animation: marquee 60s linear infinite;
+  100% {
+    transform: translateX(-50%); /* Move by half of the container width */
   }
+}
 
-
-
-  @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-  }
 </style>
-<div class="marquee-container bg-[url(../patterns/dots.png)] bg-[length:auto_62px]">
-  <div class="marquee-content">
-      <span class="text-4xl leading-[0.75] text-white uppercase font-extrabold">
-        Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
+
+
+<a 
+  href="#" 
+  class="block h-62 overflow-hidden w-full bg-[url(../patterns/dots.png)] bg-[length:auto_62px] uppercase font-extrabold leading-[0.75] text-white text-[50px]">
+  <div class="flex h-62 items-center w-[200%] relative" data-animation="marquee">
+    <div class="flex-1 h-50 whitespace-nowrap">
+      <span>
+        Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra
+      </span>
+    </div>
+    <div class="flex-1 h-50 whitespace-nowrap">
+      <span>Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
+    </div>
   </div>
-</div>
+</a>
 
 
 <footer>
