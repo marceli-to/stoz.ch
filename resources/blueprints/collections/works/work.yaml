@@ -1,0 +1,229 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: preview_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Vorschaubild
+              folder: works
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: description
+            field:
+              buttons:
+                - bold
+                - unorderedlist
+                - removeformat
+                - anchor
+              toolbar_mode: floating
+              remove_empty_nodes: true
+              type: bard
+              display: Beschreibung
+          -
+            handle: tasks
+            field:
+              type: textarea
+              display: Aufgaben
+              instructions: 'Auflistung der ausgeführten Aufgaben'
+          -
+            handle: links
+            field:
+              type: replicator
+              display: Links
+              sets:
+                neue_setgruppe:
+                  display: 'Neue Setgruppe'
+                  sets:
+                    link:
+                      display: Link
+                      instructions: 'Link hinzufügen'
+                      icon: link-external
+                      fields:
+                        -
+                          handle: url
+                          field:
+                            type: link
+                            display: URL
+                        -
+                          handle: display
+                          field:
+                            type: text
+                            display: Anzeige
+          -
+            handle: elements
+            field:
+              type: replicator
+              display: Elemente
+              sets:
+                neue_setgruppe:
+                  display: 'Neue Setgruppe'
+                  sets:
+                    media_landscape_portrait:
+                      display: 'Medien Quer/Hoch'
+                      instructions: 'Reihe mit Quer/Hochformat'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          handle: media_type_landscape
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ querformat'
+                        -
+                          handle: image_landscape
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            if:
+                              media_type_landscape: 'equals image'
+                        -
+                          handle: video_landscape
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Video querformat'
+                            if:
+                              media_type_landscape: 'equals video'
+                        -
+                          handle: media_type_portrait
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ hochformat'
+                        -
+                          handle: image_portrait
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild hochformat'
+                            if:
+                              media_type_portrait: 'equals image'
+                        -
+                          handle: video_portrait
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Video hochformat'
+                            if:
+                              media_type_portrait: 'equals video'
+                    media_portrait_landscape:
+                      display: 'Medien Hoch/Quer'
+                      instructions: 'Reihe mit Hoch/Querformat'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          handle: media_type_portrait
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ hochformat'
+                        -
+                          handle: image_portrait
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild hochformat'
+                            if:
+                              media_type_portrait: 'equals image'
+                        -
+                          handle: media_type_landscape
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ querformat'
+                        -
+                          handle: image_landscape
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            if:
+                              media_type_landscape: 'equals image'
+                    media_landscape:
+                      display: 'Medien Quer/Quer'
+                      instructions: 'Reihe mit 2 Querformaten'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          handle: image_landscape_left
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            width: 50
+                        -
+                          handle: image_landscape_right
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            width: 50
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+title: Work
