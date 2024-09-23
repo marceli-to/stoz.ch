@@ -80,6 +80,13 @@ tabs:
                       fields:
                         -
                           import: team_member
+                    works:
+                      display: Works
+                      instructions: 'Liste der Arbeiten'
+                      icon: layout-grid-dots
+                      fields:
+                        -
+                          import: works_listing
   seo:
     display: SEO
     sections:

@@ -1,0 +1,10 @@
+{{ collection from="works" as="works" }}
+  {{ if works }}
+    {{ works }} 
+      {{ if id == current }}
+        <a href="{{ prev ? prev:url : '#' }}">Prev</a>
+        <a href="{{ next ? next:url : '#' }}">Next</a>
+      {{ /if }}
+    {{ /works }}
+  {{ /if }}
+{{ /collection }}

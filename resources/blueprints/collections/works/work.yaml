@@ -3,6 +3,7 @@ tabs:
     display: Main
     sections:
       -
+        display: Inhalt
         fields:
           -
             handle: preview_image
@@ -17,8 +18,14 @@ tabs:
             field:
               type: text
               required: true
+              display: Titel
               validate:
                 - required
+          -
+            handle: title_multi_line
+            field:
+              type: textarea
+              display: 'Titel (mehrzeilig)'
           -
             handle: description
             field:
@@ -170,6 +177,15 @@ tabs:
                             if:
                               media_type_portrait: 'equals image'
                         -
+                          handle: video_portrait
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Video hochformat'
+                            if:
+                              media_type_portrait: 'equals video'
+                        -
                           handle: media_type_landscape
                           field:
                             options:
@@ -192,11 +208,48 @@ tabs:
                             display: 'Bild querformat'
                             if:
                               media_type_landscape: 'equals image'
+                        -
+                          handle: video_landscape
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Video querformat'
+                            if:
+                              media_type_landscape: 'equals video'
                     media_landscape:
                       display: 'Medien Quer/Quer'
                       instructions: 'Reihe mit 2 Querformaten'
                       icon: media-image-picture-gallery
                       fields:
+                        -
+                          handle: media_type_landscape_left
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ querformat'
+                            width: 50
+                        -
+                          handle: media_type_landscape_right
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ querformat'
+                            width: 50
                         -
                           handle: image_landscape_left
                           field:
@@ -206,6 +259,8 @@ tabs:
                             type: assets
                             display: 'Bild querformat'
                             width: 50
+                            if:
+                              media_type_landscape_left: 'equals image'
                         -
                           handle: image_landscape_right
                           field:
@@ -215,6 +270,34 @@ tabs:
                             type: assets
                             display: 'Bild querformat'
                             width: 50
+                            if:
+                              media_type_landscape_right: 'equals image'
+                        -
+                          handle: video_landscape_left
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Video querformat'
+                            width: 50
+                            if:
+                              media_type_landscape_left: 'equals video'
+                        -
+                          handle: video_landscape_right
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Video querformat'
+                            width: 50
+                            if:
+                              media_type_landscape_right: 'equals video'
+  seo:
+    display: SEO
+    sections:
+      -
+        display: SEO
+        fields:
+          -
+            import: seo
   sidebar:
     display: Sidebar
     sections:
@@ -226,4 +309,13 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - works
+              max_items: 1
+              listable: false
+              localizable: true
 title: Work

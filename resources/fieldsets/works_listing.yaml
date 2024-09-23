@@ -1,0 +1,9 @@
+title: 'Works (Listing)'
+fields:
+  -
+    handle: work
+    field:
+      collections:
+        - works
+      type: entries
+      display: Work
