@@ -1,57 +1,71 @@
-{{# <style>
-  .marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-}
-  @keyframes marquee {
-      0%   { transform: translate(0, 0); }
-      100% { transform: translate(-100%, 0); }
-  }
-</style>
-<div class="marquee bg-[url(../patterns/dots.png)] bg-[length:auto_62px] w-full h-62 flex overflow-hidden">
-  <span class="text-3xl text-white uppercase font-bold">Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
-</div> #}}
-{{# <marquee class="bg-[url(../patterns/dots.png)] bg-[length:auto_62px] w-full h-62 pb-4">
-  <span class="text-4xl leading-[0.8] text-white uppercase font-extrabold">Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
-</marquee> #}}
-<style>
-
-
-[data-animation="marquee"] {
-  animation: marquee 30s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); /* Move by half of the container width */
-  }
-}
-
-</style>
-
-
-<a 
-  href="#" 
-  class="block h-62 overflow-hidden w-full bg-[url(../patterns/dots.png)] bg-[length:auto_62px] uppercase font-extrabold leading-[0.75] text-white text-[50px]">
-  <div class="flex h-62 items-center w-[200%] relative" data-animation="marquee">
-    <div class="flex-1 h-50 whitespace-nowrap">
-      <span>
-        Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra
-      </span>
-    </div>
-    <div class="flex-1 h-50 whitespace-nowrap">
-      <span>Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
-    </div>
-  </div>
-</a>
-
-
-<footer>
-
+{{ partial:marquee }}
+<footer class="bg-black text-white py-20 lg:py-40">
+  {{ partial:layout/inner }}
+    <section class="flex flex-col space-y-20 md:flex-row md:justify-between md:items-end">
+      <div class="flex flex-col space-y-20 md:space-y-0  md:flex-row md:gap-x-40 lg:gap-x-60">
+        <div>
+          {{ if contact_information:name }}
+            <h3 class="uppercase font-bold">
+              {{ contact_information:name }}
+            </h3>
+          {{ /if }}
+          {{ if contact_information:address }}
+            {{ contact_information:address | nl2br }}
+          {{ /if }}
+        </div>
+        <div>
+          <h3 class="uppercase font-bold">
+            Say hello
+          </h3>
+          {{ if contact_information:phone }}
+            <a href="tel:{{ contact_information:phone }}" title="Rufen Sie uns an!" class="block">
+              {{ contact_information:phone }}
+            </a>
+          {{ /if }}
+          {{ if contact_information:email }}
+            <a href="mailto:{{ contact_information:email }}" title="Schreiben Sie uns eine E-Mail!" class="block">
+              {{ contact_information:email }}
+            </a>
+          {{ /if }}
+        </div>
+        <div>
+          <h3 class="uppercase font-bold">Join us</h3>
+          <div class="flex items-center md:justify-center gap-10 md:mt-15">
+            {{ if social_media_accounts:facebook }}
+              <a href="{{ social_media_accounts:facebook }}" title="Facebook" target="_blank">
+                {{ partial:icons/facebook class="block w-25 h-26" }}
+              </a>
+            {{ /if }}
+            {{ if social_media_accounts:instagram }}
+              <a href="{{ social_media_accounts:instagram }}" title="Instagram" target="_blank">
+                {{ partial:icons/instagram class="block w-25 h-25" }}
+              </a>
+            {{ /if }}
+            {{ if social_media_accounts:linkedin }}
+              <a href="{{ social_media_accounts:linkedin }}" title="LinkedIn" target="_blank">
+                {{ partial:icons/linkedin class="w-25 h-25" }}
+                {{ partial:icons/instagram class="block w-25 h-25" }}
+              </a>
+            {{ /if }}
+          </div>
+        </div>
+      </div>
+      <div class="uppercase font-semibold flex flex-col gap-y-5">
+        <a 
+          href="/impressum" 
+          title="Impressum"
+          class="block">
+          Impressum
+        </a>
+        <a 
+          href="/datenschutz" 
+          title="Datenschutz"
+          class="block">
+          Datenschutz
+        </a>
+      </div>
+    </section>
+  {{ /partial:layout/inner}}
 </footer>
 {{ vite src="resources/js/app.js" }}
 {{ livewire:scripts }}

@@ -22,9 +22,3 @@ tabs:
               type: text
               display: LinkedIn
               localizable: true
-          -
-            handle: youtube
-            field:
-              type: text
-              display: Youtube
-              localizable: true
