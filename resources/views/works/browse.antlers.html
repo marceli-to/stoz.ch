@@ -1,10 +1,23 @@
 {{ collection from="works" as="works" }}
   {{ if works }}
-    {{ works }} 
-      {{ if id == current }}
-        <a href="{{ prev ? prev:url : '#' }}">Prev</a>
-        <a href="{{ next ? next:url : '#' }}">Next</a>
-      {{ /if }}
-    {{ /works }}
+    <div class="flex gap-x-6">
+      {{ works }} 
+        {{ if id == current }}
+          <a 
+            href="{{ prev:url }}"
+            class="{{ !prev ? 'opacity-50 pointer-events-none' : '' }}">
+            Prev
+          </a>
+          <a href="/works">
+            X
+          </a>
+          <a 
+            href="{{ next:url }}"
+            class="{{ !next ? 'opacity-50 pointer-events-none' : '' }}">
+            Next
+          </a>
+        {{ /if }}
+      {{ /works }}
+    </div>
   {{ /if }}
 {{ /collection }}

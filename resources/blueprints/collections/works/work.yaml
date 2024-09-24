@@ -183,6 +183,7 @@ tabs:
                             container: assets
                             type: assets
                             display: 'Video hochformat'
+                            folder: works
                             if:
                               media_type_portrait: 'equals video'
                         -
@@ -215,6 +216,7 @@ tabs:
                             container: assets
                             type: assets
                             display: 'Video querformat'
+                            folder: works
                             if:
                               media_type_landscape: 'equals video'
                     media_landscape:
@@ -235,7 +237,26 @@ tabs:
                             default: image
                             type: select
                             display: 'Typ querformat'
-                            width: 50
+                        -
+                          handle: image_landscape_left
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            if:
+                              media_type_landscape_left: 'equals image'
+                        -
+                          handle: video_landscape_left
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Video querformat'
+                            if:
+                              media_type_landscape_left: 'equals video'
+                            folder: works
+                            max_files: 1
                         -
                           handle: media_type_landscape_right
                           field:
@@ -249,18 +270,6 @@ tabs:
                             default: image
                             type: select
                             display: 'Typ querformat'
-                            width: 50
-                        -
-                          handle: image_landscape_left
-                          field:
-                            max_files: 1
-                            container: assets
-                            folder: works
-                            type: assets
-                            display: 'Bild querformat'
-                            width: 50
-                            if:
-                              media_type_landscape_left: 'equals image'
                         -
                           handle: image_landscape_right
                           field:
@@ -269,27 +278,18 @@ tabs:
                             folder: works
                             type: assets
                             display: 'Bild querformat'
-                            width: 50
                             if:
                               media_type_landscape_right: 'equals image'
-                        -
-                          handle: video_landscape_left
-                          field:
-                            container: assets
-                            type: assets
-                            display: 'Video querformat'
-                            width: 50
-                            if:
-                              media_type_landscape_left: 'equals video'
                         -
                           handle: video_landscape_right
                           field:
                             container: assets
                             type: assets
                             display: 'Video querformat'
-                            width: 50
                             if:
                               media_type_landscape_right: 'equals video'
+                            folder: works
+                            max_files: 1
   seo:
     display: SEO
     sections:

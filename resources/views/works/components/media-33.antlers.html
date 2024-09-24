@@ -1,0 +1,11 @@
+<div class="md:col-span-4 relative aspect-[3/4] ">
+  {{ if media_type_portrait == 'video' }}
+    {{ partial:media/video 
+      :video="video"
+      class="block absolute w-full h-full object-cover aspect-[3/4]" }}
+  {{ else if media_type_portrait == 'image' }}
+    {{ partial:media/image 
+      :image="image" 
+      class="block absolute w-full h-full object-cover aspect-[3/4]" }}
+  {{ /if }}
+</div>
