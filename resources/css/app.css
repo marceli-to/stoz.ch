@@ -1,5 +1,6 @@
 @import "typo/webfonts.css";
 @import "animations/marquee.css";
+@import "animations/hover.css";
 
 @tailwind base;
 @tailwind components;

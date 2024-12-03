@@ -1,12 +1,12 @@
-{{ if page_title }}
+{{# {{ if page_title }}
   {{ partial:headings/title }}
 {{ /if }}
 
 {{ if page_claim }}
   {{ partial:headings/claim }}
-{{ /if }}
+{{ /if }} #}}
 
-{{ page_elements }}
-  {{ partial:elements }}
-{{ /page_elements }}
+{{ content_blocks }}
+  {{ partial:blocks }}
+{{ /content_blocks }}
 

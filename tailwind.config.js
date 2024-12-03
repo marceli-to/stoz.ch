@@ -24,6 +24,10 @@ export default {
         'xs': '480px',
       },
 
+      backgroundImage: {
+        'menu-pattern': "url('img/patterns/menu.jpg')",
+      },
+
       fontFamily: {
         'neue-haas-unica': ['neue-haas-unica', ...defaultTheme.fontFamily.sans],
       },
@@ -33,13 +37,22 @@ export default {
       },      
 
       fontSize: {
-        'sm': '0.875rem', // 14px
-        'base': '1rem',   // 16px 
-        'md': '1.125rem', // 18px
-        'lg': '1.625rem', // 26px
-
-        '4xl': '4.5rem', // 72px
+        'xxs': '0.8125rem',  // 13px
+        'xs': '0.875rem',    // 14px
+        'sm': '0.9375rem',   // 15px
+        'md': '1rem',        // 16px
+        'lg': '1.25rem',     // 20px
+        'xl': '1.5625rem',   // 25px
+        '2xl': '1.75rem',    // 28px
+        '3xl': '2.5rem',     // 40px
+        '4xl': '2.75rem',    // 44px
+        '5xl': '3.125rem',   // 50px
+        '6xl': '3.75rem',    // 60px
+        '7xl': '4rem',       // 64px
+        '8xl': '4.375rem',   // 70px
+        '9xl': '7.8125rem',  // 125px
       },
+      
       
       zIndex: {
         '60': 60,

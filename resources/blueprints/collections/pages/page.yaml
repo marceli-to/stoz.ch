@@ -20,7 +20,7 @@ tabs:
           -
             import: page_claim
           -
-            handle: page_elements
+            handle: content_blocks
             field:
               type: replicator
               display: Inhalte
@@ -87,6 +87,17 @@ tabs:
                       fields:
                         -
                           import: works_listing
+                header:
+                  display: Header
+                  icon: addon-boxes-stack
+                  sets:
+                    header_contact:
+                      display: 'Header «Contact»'
+                      instructions: 'Header für «Contact» hinzufügen'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: header_contact
   seo:
     display: SEO
     sections:

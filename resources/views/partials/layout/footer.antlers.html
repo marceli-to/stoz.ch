@@ -1,11 +1,11 @@
-{{ partial:marquee }}
-<footer class="bg-black text-white py-20 lg:py-40">
+{{ partial:misc/marquee }}
+<footer class="bg-black text-white py-30 md:py-50 relative z-40 lg:z-80">
   {{ partial:layout/inner }}
-    <section class="flex flex-col space-y-20 md:flex-row md:justify-between md:items-end">
-      <div class="flex flex-col space-y-20 md:space-y-0  md:flex-row md:gap-x-40 lg:gap-x-60">
+    <section class="flex flex-col space-y-40 md:space-y-0 md:flex-row md:justify-between md:items-end">
+      <div class="flex flex-col space-y-40 md:space-y-0 md:flex-row md:gap-x-40 leading-[1.6] md:leading-[1.3]">
         <div>
           {{ if contact_information:name }}
-            <h3 class="uppercase font-bold">
+            <h3 class="uppercase font-bold mb-3">
               {{ contact_information:name }}
             </h3>
           {{ /if }}
@@ -14,9 +14,7 @@
           {{ /if }}
         </div>
         <div>
-          <h3 class="uppercase font-bold">
-            Say hello
-          </h3>
+          <h3 class="uppercase font-bold mb-3">Say Hello</h3>
           {{ if contact_information:phone }}
             <a href="tel:{{ contact_information:phone }}" title="Rufen Sie uns an!" class="block">
               {{ contact_information:phone }}
@@ -29,22 +27,21 @@
           {{ /if }}
         </div>
         <div>
-          <h3 class="uppercase font-bold">Join us</h3>
-          <div class="flex items-center md:justify-center gap-10 md:mt-15">
+          <h3 class="uppercase font-bold mb-8">Join us</h3>
+          <div class="flex items-center md:justify-center gap-10 md:mt-12">
             {{ if social_media_accounts:facebook }}
-              <a href="{{ social_media_accounts:facebook }}" title="Facebook" target="_blank">
-                {{ partial:icons/facebook class="block w-25 h-26" }}
+              <a href="{{ social_media_accounts:facebook }}" title="stoz.ch auf Facebook" target="_blank">
+                {{ partial:icons/facebook class="block w-26 h-26" }}
               </a>
             {{ /if }}
             {{ if social_media_accounts:instagram }}
-              <a href="{{ social_media_accounts:instagram }}" title="Instagram" target="_blank">
-                {{ partial:icons/instagram class="block w-25 h-25" }}
+              <a href="{{ social_media_accounts:instagram }}" title="stoz.ch auf Instagram" target="_blank">
+                {{ partial:icons/instagram class="block w-26 h-26" }}
               </a>
             {{ /if }}
             {{ if social_media_accounts:linkedin }}
-              <a href="{{ social_media_accounts:linkedin }}" title="LinkedIn" target="_blank">
-                {{ partial:icons/linkedin class="w-25 h-25" }}
-                {{ partial:icons/instagram class="block w-25 h-25" }}
+              <a href="{{ social_media_accounts:linkedin }}" title="stoz.ch auf "LinkedIn" target="_blank">
+                {{ partial:icons/linkedin class="block w-26 h-26" }}
               </a>
             {{ /if }}
           </div>

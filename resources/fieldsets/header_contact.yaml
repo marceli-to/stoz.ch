@@ -1,0 +1,10 @@
+title: 'Header «Contact»'
+fields:
+  -
+    handle: header_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      folder: header
