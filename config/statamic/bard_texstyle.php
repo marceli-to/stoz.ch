@@ -33,15 +33,15 @@ return [
           'cp_badge' => false,
         ],
 
-        // 'brand' => [
-        //     'type' => 'span',
-        //     'name' => 'Brand Text',
-        //     'ident' => 'B',
-        //     'icon' => null,
-        //     'class' => 'brand-text',
-        //     'cp_css' => 'color: #ff269e; font-weight: 700',
-        //     'cp_badge' => false,
-        // ],
+        'brand' => [
+            'type' => 'span',
+            'name' => 'Lead',
+            'ident' => 'L',
+            'icon' => null,
+            'class' => 'text-md font-bold',
+            'cp_css' => 'font-size: 1rem; font-weight: 700',
+            'cp_badge' => false,
+        ],
 
         // 'action' => [
         //     'type' => 'link',

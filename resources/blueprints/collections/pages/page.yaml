@@ -16,10 +16,6 @@ tabs:
               display: Titel
               localizable: true
           -
-            import: page_title
-          -
-            import: page_claim
-          -
             handle: content_blocks
             field:
               type: replicator

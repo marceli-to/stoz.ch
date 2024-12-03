@@ -24,17 +24,29 @@ export default {
         'xs': '480px',
       },
 
+      maxWidth: {
+        'prose': '75ch',
+      },
+
       backgroundImage: {
         'menu-pattern': "url('img/patterns/menu.jpg')",
+      },
+
+      colors: {
+
       },
 
       fontFamily: {
         'neue-haas-unica': ['neue-haas-unica', ...defaultTheme.fontFamily.sans],
       },
 
-      colors: {
-
-      },      
+      fontWeight: {
+        'ultra-light': '100',
+        'light': '300',
+        'medium': '500',
+        'bold': '600',
+        'black': '800',
+      },
 
       fontSize: {
         'xxs': '0.8125rem',  // 13px

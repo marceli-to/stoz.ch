@@ -4,7 +4,6 @@ fields:
     handle: editor
     field:
       buttons:
-        - h1
         - h2
         - h3
         - bold
@@ -12,9 +11,10 @@ fields:
         - removeformat
         - anchor
         - nobr
+        - brand
       toolbar_mode: floating
       remove_empty_nodes: true
       type: bard
-      display: Text
+      display: Texteditor
       container: assets
       localizable: true

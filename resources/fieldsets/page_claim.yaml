@@ -5,5 +5,5 @@ fields:
     field:
       type: textarea
       display: Seitenclaim
-      instructions: 'Mehrzeiliger Untertitel (optional)'
+      instructions: 'Mehrzeiliger Untertitel'
       instructions_position: below
