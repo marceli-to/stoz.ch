@@ -26,26 +26,14 @@
             </a>
           {{ /if }}
         </div>
-        <div>
-          <h3 class="uppercase font-bold mb-8">Join us</h3>
-          <div class="flex items-center md:justify-center gap-10 md:mt-12">
-            {{ if social_media_accounts:facebook }}
-              <a href="{{ social_media_accounts:facebook }}" title="stoz.ch auf Facebook" target="_blank">
-                {{ partial:icons/facebook class="block w-26 h-26" }}
-              </a>
-            {{ /if }}
-            {{ if social_media_accounts:instagram }}
-              <a href="{{ social_media_accounts:instagram }}" title="stoz.ch auf Instagram" target="_blank">
-                {{ partial:icons/instagram class="block w-26 h-26" }}
-              </a>
-            {{ /if }}
-            {{ if social_media_accounts:linkedin }}
-              <a href="{{ social_media_accounts:linkedin }}" title="stoz.ch auf "LinkedIn" target="_blank">
-                {{ partial:icons/linkedin class="block w-26 h-26" }}
-              </a>
-            {{ /if }}
+        {{ if social_media_accounts:facebook || social_media_accounts:instagram || social_media_accounts:linkedin }}
+          <div>
+            <h3 class="uppercase font-bold mb-8">Join us</h3>
+            <div class="flex items-center md:justify-center gap-10 md:mt-12">
+              {{ partial:misc/socials }}
+            </div>
           </div>
-        </div>
+        {{ /if }}
       </div>
       <div class="uppercase font-semibold flex flex-col gap-y-5">
         <a 

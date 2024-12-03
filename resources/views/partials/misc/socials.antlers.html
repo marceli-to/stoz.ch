@@ -1,0 +1,27 @@
+{{ if social_media_accounts:facebook }}
+  <a 
+    href="{{ social_media_accounts:facebook }}" 
+    title="stoz.ch auf Facebook" 
+    target="_blank"
+    class="group">
+    {{ partial:icons/facebook class="block w-26 h-26 group-hover:rotate-[10deg] transition-all" }}
+  </a>
+{{ /if }}
+{{ if social_media_accounts:instagram }}
+  <a 
+    href="{{ social_media_accounts:instagram }}" 
+    title="stoz.ch auf Instagram" 
+    target="_blank"
+    class="group">
+    {{ partial:icons/instagram class="block w-26 h-26 group-hover:rotate-[10deg] transition-all" }}
+  </a>
+{{ /if }}
+{{ if social_media_accounts:linkedin }}
+  <a 
+    href="{{ social_media_accounts:linkedin }}" 
+    title="stoz.ch auf LinkedIn" 
+    target="_blank"
+    class="group">
+    {{ partial:icons/linkedin class="block w-26 h-26 group-hover:rotate-[10deg] transition-all" }}
+  </a>
+{{ /if }}
