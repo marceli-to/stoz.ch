@@ -1,0 +1,22 @@
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+[data-marquee-animate-scroll] {
+  animation: marquee-scroll 15s linear infinite;
+}
+
+[data-marquee-pause-on-hover]:hover [data-marquee-animate-scroll] {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-marquee-animate-scroll] {
+    animation-duration: 30s;
+  }
+}

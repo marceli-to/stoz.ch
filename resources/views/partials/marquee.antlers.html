@@ -1,14 +1,20 @@
 <a 
-  href="#" 
-  class="block h-60 overflow-hidden w-full bg-[url(../patterns/dots.png)] bg-[length:auto_62px] uppercase font-extrabold leading-[0.75] text-white text-[54px]">
-  <div class="flex h-60 items-center w-[200%] relative -top-3" data-animation="marquee">
-    <div class="flex-1 h-42 whitespace-nowrap">
-      <span>
-        Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra
-      </span>
-    </div>
-    <div class="flex-1 h-42 whitespace-nowrap">
-      <span>Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra</span>
-    </div>
+  href="#"
+  class="relative flex overflow-hidden h-54 bg-black bg-[url(../patterns/dots.png)] bg-[length:auto_62px] select-none"
+  data-marquee-pause-on-hover>
+  <div 
+    class="flex whitespace-nowrap" 
+    data-marquee-animate-scroll>
+    <span class="text-[42px] font-extrabold uppercase leading-[0.75] text-white pt-8">
+      Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra&nbsp;
+    </span>
+  </div>
+  <div 
+    class="flex whitespace-nowrap" 
+    aria-hidden="true" 
+    data-marquee-animate-scroll>
+    <span class="text-[42px] font-extrabold uppercase leading-[0.75] text-white pt-8">
+      Extra Extra Extra Extra Extra Extra Extra Extra Extra Extra&nbsp;
+    </span>
   </div>
 </a>
