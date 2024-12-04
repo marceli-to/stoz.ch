@@ -1,10 +1,15 @@
 <div class="px-10 lg:pl-45 2xl:pl-160 lg:pr-160 mt-20 lg:mt-130">
   <figure class="relative">
     {{ if page_title }}
-      <h1 class="bg-black font-black text-2xl md:text-4xl lg:text-7xl uppercase text-white px-5 pb-2 lg:px-10 lg:pb-5 inline-flex items-center justify-center leading-none shadow-2xl -rotate-6 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" data-animation-hover>
+      {{ partial:headings/title data="data-animation-hover" }}
         {{ page_title }}
-      </h1>
+      {{ /partial:headings/title }}
     {{ /if }}
-    <img src="{{ header_image }}" width="{{ header_image:width }}" height="{{ header_image:height }}" class="w-full h-full object-cover 2xl:aspect-[16/5]" alt="Contact" />
+    <img 
+      src="{{ header_image }}" 
+      width="{{ header_image:width }}" 
+      height="{{ header_image:height }}" 
+      class="w-full h-full object-cover 2xl:aspect-[16/5]" 
+      alt="Contact" />
   </figure>
 </div>

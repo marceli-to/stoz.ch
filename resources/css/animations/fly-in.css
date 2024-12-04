@@ -1,0 +1,30 @@
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -350%) rotate(-6deg);
+  }
+  65% {
+    transform: translate(-50%, -45%) rotate(-6deg);
+  }
+  75% {
+    transform: translate(-50%, -54%) rotate(-6deg);
+  }
+  85% {
+    transform: translate(-50%, -47%) rotate(-6deg);
+  }
+  92% {
+    transform: translate(-50%, -51%) rotate(-6deg);
+  }
+  96% {
+    transform: translate(-50%, -48%) rotate(-6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-6deg);
+  }
+}
+
+[data-animation-fly-in] {
+  opacity: 0;
+  animation: flyIn 0.33s 0.66s cubic-bezier(0.6, 0.1, 0.3, 1) forwards;
+}
