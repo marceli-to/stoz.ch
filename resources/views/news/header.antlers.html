@@ -1,21 +1,27 @@
 <div>
   <figure class="relative">
     {{ if page_title }}
-      {{ partial:headings/title data="data-animation-fly-in" }}
-      {{ page_title }}
+      {{ partial:headings/title data="data-animation-fly-in" class="top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" }}
+        {{ page_title }}
       {{ /partial:headings/title }}
     {{ /if }}
     <img 
-      src="/assets/header/header-news-title.png" 
-      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full h-auto max-w-[240px] md:max-w-sm lg:max-w-md 2xl:max-w-2xl"
-      width="640"
-      height="378" 
+      src="{{ header_image_lettering }}" 
+      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-5 w-full h-auto max-w-[240px] md:max-w-sm lg:max-w-md 2xl:max-w-2xl"
+      width="{{ header_image_lettering:width }}"
+      height="{{ header_image_lettering:height }}" 
       alt="News"
       data-animation-blink>
+      <img 
+        src="{{ header_image_dots }}" 
+        width="{{ header_image_dots:width }}" 
+        height="{{ header_image_dots:height }}" 
+        class="absolute left-0 top-0 z-10 w-full h-full object-cover aspect-[16/10] md:aspect-[16/7] 2xl:aspect-[16/5]" 
+        alt="News" />
     <img 
-      src="{{ header_image }}" 
-      width="{{ header_image:width }}" 
-      height="{{ header_image:height }}" 
+      src="{{ header_image_gradient }}" 
+      width="{{ header_image_gradient:width }}" 
+      height="{{ header_image_gradient:height }}" 
       class="w-full h-full object-cover aspect-[16/10] md:aspect-[16/7] 2xl:aspect-[16/5]" 
       alt="News" />
   </figure>

@@ -1,3 +1,4 @@
+/* Fade in, slide up */
 [data-animation-observe][data-animation-fade-in] {
   opacity: 0;
   transform: translateY(90px);
@@ -7,4 +8,24 @@
 [data-animation-observe][data-animation-fade-in].is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Fade in (slow) */
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-animation-fade-in-slow] {
+  opacity: 0;
+  animation: fadeInSlow .75s .5s ease-in-out forwards;
+}
+
+[data-animation-fade-in-slow][data-animation-fade-in-delay] {
+  opacity: 0;
+  animation: fadeInSlow .75s 1.25s ease-in-out forwards;
 }

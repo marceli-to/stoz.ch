@@ -1,0 +1,34 @@
+{{ partial:layout/inner class="relative" }}
+
+  {{ if page_title }}
+    {{ partial:headings/title class="-bottom-10 sm:bottom-0 lg:-bottom-30 2xl:-bottom-10 left-25 lg:left-[10vw] 2xl:-left-30" }}
+      {{ page_title }}
+    {{ /partial:headings/title }}
+  {{ /if }}
+
+  <figure class="aspect-[16/5] sm:aspect-[16/4] lg:aspect-[16/5] xl:aspect-[16/4]">
+
+    {{ if header_image_donut }}
+      <img 
+        src="{{ header_image_donut }}" 
+        width="{{ header_image_donut:width }}" 
+        height="{{ header_image_donut:height }}" 
+        class="w-[25vw] max-w-[300px] 2xl:max-w-[360px] h-auto aspect-square absolute -translate-y-[50%] top-0 left-[25%] z-10"
+        data-animation-fade-in-slow
+        alt="Clients" />
+    {{ /if }}
+
+    {{ if header_image_gradient }}
+      <img 
+        src="{{ header_image_gradient }}" 
+        width="{{ header_image_gradient:width }}" 
+        height="{{ header_image_gradient:height }}" 
+        class="w-[35vw] max-w-[400px] h-auto aspect-square absolute -translate-y-[75%] top-0 left-[40%] 2xl:left-[45%] z-5"
+        data-animation-fade-in-slow
+        data-animation-fade-in-delay 
+        alt="Clients" />
+    {{ /if }}
+
+  </figure>
+
+{{ /partial:layout/inner }}

@@ -1,10 +1,26 @@
 title: 'Header «News»'
 fields:
   -
-    handle: header_image
+    handle: header_image_gradient
     field:
       max_files: 1
       container: assets
       type: assets
-      display: Bild
+      display: 'Bild (Verlauf)'
       folder: header
+  -
+    handle: header_image_dots
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Punkte)'
+  -
+    handle: header_image_lettering
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Schriftzug)'

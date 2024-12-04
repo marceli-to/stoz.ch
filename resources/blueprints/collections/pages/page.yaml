@@ -16,6 +16,8 @@ tabs:
               display: Titel
               localizable: true
           -
+            import: page_title
+          -
             handle: content_blocks
             field:
               type: replicator
@@ -106,6 +108,13 @@ tabs:
                       fields:
                         -
                           import: header_news
+                    header_clients:
+                      display: 'Header «Clients»'
+                      instructions: 'Header für «Clients» hinzufügen'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: header_clients
   seo:
     display: SEO
     sections:

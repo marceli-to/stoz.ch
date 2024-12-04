@@ -6,7 +6,6 @@
 {{ collection from="news" as="news" sort="date:desc" }}
   {{ if news }}
     {{ news }} 
-      {{ even }}
       {{ partial:news/article class="{{ switch between='is-odd|is-even' }}" }}
     {{ /news }}
   {{ /if }}

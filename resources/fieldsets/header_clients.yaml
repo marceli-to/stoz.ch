@@ -1,0 +1,18 @@
+title: 'Header «Clients»'
+fields:
+  -
+    handle: header_image_donut
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Donut)'
+  -
+    handle: header_image_gradient
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Verlauf)'
