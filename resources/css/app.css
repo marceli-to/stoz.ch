@@ -1,6 +1,7 @@
 @import "typo/webfonts.css";
-@import "animations/marquee.css";
+@import "animations/blink.css";
 @import "animations/hover.css";
+@import "animations/marquee.css";
 @import "animations/fade-in.css";
 @import "animations/fly-in.css";
 

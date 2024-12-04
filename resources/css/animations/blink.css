@@ -1,0 +1,19 @@
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+[data-animation-blink] {
+  opacity: 0;
+  animation: blink 2s .4s ease-in-out infinite forwards;
+}

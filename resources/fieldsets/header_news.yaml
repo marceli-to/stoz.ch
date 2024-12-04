@@ -7,3 +7,4 @@ fields:
       container: assets
       type: assets
       display: Bild
+      folder: header
