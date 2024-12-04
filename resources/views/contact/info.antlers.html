@@ -1,0 +1,31 @@
+<div>
+  {{ if contact_information:name }}
+    <h3 class="uppercase font-black mb-3">
+      {{ contact_information:name }}
+    </h3>
+  {{ /if }}
+  {{ if contact_information:address }}
+    {{ contact_information:address | nl2br }}
+  {{ /if }}
+</div>
+<div>
+  <h3 class="uppercase font-black mb-3">Say Hello</h3>
+  {{ if contact_information:phone }}
+    <a href="tel:{{ contact_information:phone }}" title="Rufen Sie uns an!" class="block">
+      {{ contact_information:phone }}
+    </a>
+  {{ /if }}
+  {{ if contact_information:email }}
+    <a href="mailto:{{ contact_information:email }}" title="Schreiben Sie uns eine E-Mail!" class="block">
+      {{ contact_information:email }}
+    </a>
+  {{ /if }}
+</div>
+{{ if social_media_accounts:facebook || social_media_accounts:instagram || social_media_accounts:linkedin }}
+  <div>
+    <h3 class="uppercase font-black mb-8">Join us</h3>
+    <div class="flex gap-10 md:mt-12">
+      {{ partial:misc/socials }}
+    </div>
+  </div>
+{{ /if }}

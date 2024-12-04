@@ -83,6 +83,11 @@ tabs:
                       fields:
                         -
                           import: works_listing
+                    contact_information:
+                      display: Kontaktinformationen
+                      instructions: 'Kontaktinformationen (Adresse, Karte) hinzufügen'
+                      icon: travel-map
+                      fields: {  }
                 header:
                   display: Header
                   icon: addon-boxes-stack

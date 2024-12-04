@@ -18,10 +18,16 @@
   {{ partial:works/list }}
 {{ /if }}
 
-{{ if type == 'header_contact' }}
-  {{ partial:media/header/contact }}
-{{ /if }}
+
 
 {{ if type == 'page_claim' }}
   {{ partial:headings/claim }}
+{{ /if }}
+
+{{ if type == 'header_contact' }}
+  {{ partial:contact/header }}
+{{ /if }}
+
+{{ if type == 'contact_information' }}
+  {{ partial:contact/wrapper }}
 {{ /if }}

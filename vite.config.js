@@ -15,6 +15,10 @@ export default defineConfig({
           input: [
               'resources/css/app.css',
               'resources/js/app.js',
+              // mapbox
+              'resources/js/mapbox.js',
+              'resources/css/mapbox.css',
+              // resources
               // Control Panel assets.
               // https://statamic.dev/extending/control-panel#adding-css-and-js-assets
               // 'resources/css/cp.css',
