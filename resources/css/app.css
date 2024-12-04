@@ -19,11 +19,11 @@ h2 {
 }
 
 strong {
-  @apply font-semibold;
+  @apply font-bold;
 }
 
 main p:not(:last-child) {
-  @apply mb-25;
+  @apply mb-16;
 }
 
 main a {
@@ -52,6 +52,14 @@ main li:not(main nav li) {
 .translate-z-0 {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+.is-odd {
+  @apply bg-white;
+}
+
+.is-even {
+  @apply bg-pearl;
 }
 
 /* Page specific */

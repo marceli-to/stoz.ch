@@ -34,7 +34,7 @@ export default {
       },
 
       colors: {
-
+        'pearl': '#F9F9F9',
       },
 
       fontFamily: {

@@ -1,43 +1,45 @@
-{{ partial:layout/inner }}
+<div class="{{ class }}">
+  {{ partial:layout/inner }}
 
-  <article class="md:grid md:grid-cols-12 md:gap-x-40 py-20 md:py-40 lg:py-60">
+    <article class="flex flex-col space-y-20 md:gap-y-0 md:grid md:grid-cols-12 md:gap-x-40 py-60">
 
-    <div class="md:col-span-6 lg:col-span-7 lg:max-w-xl">
-      
-      {{ partial:headings/h2 }}
-        {{ title }}
-      {{ /partial:headings/h2 }}
-      
-      {{ if !is_latest }}
-        <div>
-          {{ date | iso_format("DD.MM.YYYY") }}
-        </div>
-      {{ /if }}
+      <div class="md:col-span-6 lg:col-span-7 lg:max-w-xl">
 
-      {{ if lead }}
-        <div>
-          <strong>{{ lead | nl2br }}</strong>
-        </div>
-      {{ /if }}
+        {{ partial:headings/h2 }}
+          {{ title }}
+        {{ /partial:headings/h2 }}
+        
+        {{ if !is_latest }}
+          <div>
+            <strong>{{ date | iso_format("DD.MM.YYYY") }}</strong>
+          </div>
+        {{ /if }}
 
-      {{ if text }}
-        <div>{{ text }}</div>
-      {{ /if }}
-    </div>
+        {{ if lead }}
+          <p>
+            <strong>{{ lead | nl2br }}</strong>
+          </p>
+        {{ /if }}
 
-    <div class="md:col-span-6 lg:col-span-5">
-      {{ if image }}
-        {{ partial:media/image 
-          :image="image" 
-          class="w-full h-auto object-cover"
-          preset="focal-square" }}
-      {{ /if }}
-    </div>
+        {{ if text }}
+          <div>{{ text }}</div>
+        {{ /if }}
+      </div>
 
-  </article>
+      <div class="md:col-span-6 lg:col-span-5">
+        {{ if image }}
+          {{ partial:media/image 
+            :image="image" 
+            class="w-full h-auto object-cover shadow-2xl"
+            preset="focal-square" }}
+        {{ /if }}
+      </div>
 
-{{ /partial:layout/inner }}
+    </article>
 
+  {{ /partial:layout/inner }}
+
+</div>
   {{# {{ if is_latest }}
     <a href="/news">
       More about us
