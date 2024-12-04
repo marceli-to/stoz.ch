@@ -4,19 +4,7 @@
     transform: translate(-50%, -50%) rotate(-6deg);
   }
   50% {
-    transform: translate(-50%, calc(-50% - 5px)) rotate(-6deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-6deg);
-  }
-}
-
-@keyframes lg\:hover {
-  0% {
-    transform: translate(-50%, -50%) rotate(-6deg);
-  }
-  50% {
-    transform: translate(-50%, calc(-50% - 10px)) rotate(-6deg);
+    transform: translate(-50%, calc(-50% - 1vw)) rotate(-6deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(-6deg);
@@ -25,10 +13,4 @@
 
 [data-animation-hover] {
   animation: hover 3s ease-in-out infinite;
-}
-
-@media (min-width: 1024px) {
-  [data-animation-hover] {
-    animation: lg\:hover 3s ease-in-out infinite;
-  }
 }

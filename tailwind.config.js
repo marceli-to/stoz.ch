@@ -25,7 +25,7 @@ export default {
       },
 
       maxWidth: {
-        'prose': '75ch',
+        'prose': '85ch',
       },
 
       backgroundImage: {
