@@ -18,8 +18,6 @@
   {{ partial:works/list }}
 {{ /if }}
 
-
-
 {{ if type == 'page_claim' }}
   {{ partial:headings/claim }}
 {{ /if }}
@@ -30,4 +28,8 @@
 
 {{ if type == 'contact_information' }}
   {{ partial:contact/wrapper }}
+{{ /if }}
+
+{{ if type == 'header_news' }}
+  {{ partial:news/header }}
 {{ /if }}

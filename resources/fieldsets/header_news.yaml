@@ -1,4 +1,4 @@
-title: 'Header «Contact»'
+title: 'Header «News»'
 fields:
   -
     handle: header_image
@@ -7,4 +7,3 @@ fields:
       container: assets
       type: assets
       display: Bild
-      folder: header

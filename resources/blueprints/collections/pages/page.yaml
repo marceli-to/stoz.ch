@@ -99,6 +99,13 @@ tabs:
                       fields:
                         -
                           import: header_contact
+                    header_news:
+                      display: 'Header «News»'
+                      instructions: 'Header für «News» hinzufügen'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: header_news
   seo:
     display: SEO
     sections:
