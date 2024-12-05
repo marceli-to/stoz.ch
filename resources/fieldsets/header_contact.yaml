@@ -8,3 +8,13 @@ fields:
       type: assets
       display: Bild
       folder: header
+      width: 50
+  -
+    handle: header_image_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild, AVIF'
+      folder: header
+      width: 50
