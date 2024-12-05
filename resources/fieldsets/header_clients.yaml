@@ -8,6 +8,16 @@ fields:
       folder: header
       type: assets
       display: 'Bild (Donut)'
+      width: 50
+  -
+    handle: header_image_donut_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Donut), AVIF'
+      width: 50
   -
     handle: header_image_gradient
     field:
@@ -16,3 +26,13 @@ fields:
       folder: header
       type: assets
       display: 'Bild (Verlauf)'
+      width: 50
+  -
+    handle: header_image_gradient_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Verlauf), AVIF'
+      width: 50

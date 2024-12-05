@@ -1,0 +1,17 @@
+<picture>
+  {{ if avif_image }}
+    <source 
+      srcset="{{ avif_image }}"
+      type="image/avif" 
+      width="{{ image:width }}" 
+      height="{{ image:height }}" 
+    />
+  {{ /if }}
+  <img 
+    src="{{ image }}" 
+    width="{{ image:width }}" 
+    height="{{ image:height }}" 
+    class="{{ class }}"
+    alt="{{ alt }}"
+    {{ data ?? ''}} />
+</picture>

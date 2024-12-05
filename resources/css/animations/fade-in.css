@@ -25,7 +25,7 @@
   animation: fadeInSlow .75s .5s ease-in-out forwards;
 }
 
-[data-animation-fade-in-slow][data-animation-fade-in-delay] {
+[data-animation-fade-in-slow-delay] {
   opacity: 0;
   animation: fadeInSlow .75s 1.25s ease-in-out forwards;
 }
