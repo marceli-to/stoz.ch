@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const selector = '[data-animation-observe]';
   const animationClass = 'is-visible';
   const rootMargin = '0px';
-  const threshold = 0.3;
+  const threshold = 0.2;
 
   const observerOptions = {
     root: null,
