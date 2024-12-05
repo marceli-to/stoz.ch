@@ -12,5 +12,5 @@
 }
 
 [data-animation-hover] {
-  animation: hover 3s ease-in-out infinite;
+  animation: hover 5s ease-in-out infinite;
 }

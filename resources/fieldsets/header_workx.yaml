@@ -1,0 +1,56 @@
+title: 'Header «Workx»'
+fields:
+  -
+    handle: header_image_gradient
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Verlauf)'
+      width: 50
+  -
+    handle: header_image_gradient_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Verlauf), AVIF'
+      width: 50
+  -
+    handle: header_image_lines
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Linien)'
+      width: 50
+  -
+    handle: header_image_lines_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Linien), AVIF'
+      width: 50
+  -
+    handle: header_image_dots
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Punkte)'
+      width: 50
+  -
+    handle: header_image_dots_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Punkte), AVIF'
+      width: 50

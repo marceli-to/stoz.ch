@@ -1,0 +1,25 @@
+@keyframes stagger {
+  0% {
+    opacity: 0;
+    transform: translateY(-125%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animation-stagger] {
+  transform: translateY(-125%);
+  animation: stagger .25s .5s ease-in-out forwards;
+}
+
+[data-animation-stagger][data-animation-stagger-second] {
+  animation-duration: .45s;
+  animation-delay: .7s;
+}
+
+[data-animation-stagger][data-animation-stagger-third] {
+  animation-duration: .15s;
+  animation-delay: 1.25s;
+}

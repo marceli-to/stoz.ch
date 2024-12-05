@@ -122,6 +122,13 @@ tabs:
                       fields:
                         -
                           import: header_team
+                    header_workx:
+                      display: 'Header «Workx»'
+                      instructions: 'Header «Workx» hinzufügen'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: header_workx
   seo:
     display: SEO
     sections:

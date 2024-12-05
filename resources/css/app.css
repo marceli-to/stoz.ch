@@ -5,6 +5,7 @@
 @import "animations/fade-in.css";
 @import "animations/fly-in.css";
 @import "animations/slide-in.css";
+@import "animations/stagger.css";
 
 @tailwind base;
 @tailwind components;
