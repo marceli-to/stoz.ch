@@ -23,7 +23,7 @@
     "src": "resources/js/app.js"
   },
   "resources/js/mapbox.js": {
-    "file": "assets/mapbox-ab7b82fb.js",
+    "file": "assets/mapbox-84cc1258.js",
     "isEntry": true,
     "src": "resources/js/mapbox.js"
   },

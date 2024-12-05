@@ -42,7 +42,7 @@ const initMap = () => {
 const loadMapScript = () => {
   var script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js';
-  script.async = true;
+  script.defer = true;
   document.head.appendChild(script);
 
   script.onload = () => {
