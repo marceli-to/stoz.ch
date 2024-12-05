@@ -1,15 +1,17 @@
 <div>
   {{ if contact_information:name }}
-    <h3 class="uppercase font-black mb-3">
+    <span class="block uppercase font-black mb-3">
       {{ contact_information:name }}
-    </h3>
+    </span>
   {{ /if }}
   {{ if contact_information:address }}
     {{ contact_information:address | nl2br }}
   {{ /if }}
 </div>
 <div>
-  <h3 class="uppercase font-black mb-3">Say Hello</h3>
+  <span class="block uppercase font-black mb-3">
+    Say Hello
+  </span>
   {{ if contact_information:phone }}
     <a href="tel:{{ contact_information:phone }}" title="Rufen Sie uns an!" class="block">
       {{ contact_information:phone }}
@@ -23,7 +25,9 @@
 </div>
 {{ if social_media_accounts:facebook || social_media_accounts:instagram || social_media_accounts:linkedin }}
   <div>
-    <h3 class="uppercase font-black mb-8">Join us</h3>
+    <span class="block uppercase font-black mb-8">
+      Join us
+    </span>
     <div class="flex gap-10 md:mt-12">
       {{ partial:misc/socials }}
     </div>
