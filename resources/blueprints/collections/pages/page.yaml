@@ -71,13 +71,13 @@ tabs:
                       instructions: 'Liste der Kunden hinzufügen.'
                       icon: media-image-picture-orientation
                       fields: {  }
-                    team_member:
-                      display: Teammitglied
-                      instructions: 'Teammitglied hinzufügen'
+                    team:
+                      display: Team
+                      instructions: 'Team hinzufügen'
                       icon: text-formatting-image-top
                       fields:
                         -
-                          import: team_member
+                          import: team
                     works:
                       display: Works
                       instructions: 'Liste der Arbeiten'
@@ -115,6 +115,13 @@ tabs:
                       fields:
                         -
                           import: header_clients
+                    header_team:
+                      display: 'Header «Team»'
+                      instructions: 'Header «Team» hinzufügen'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: header_team
   seo:
     display: SEO
     sections:

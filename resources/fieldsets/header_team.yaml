@@ -1,0 +1,38 @@
+title: 'Header «Team»'
+fields:
+  -
+    handle: header_image_gradient
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Verlauf)'
+      width: 50
+  -
+    handle: header_image_gradient_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Verlauf), AVIF'
+      width: 50
+  -
+    handle: header_image_arrow
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Pfeil)'
+      width: 50
+  -
+    handle: header_image_arrow_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Pfeil), AVIF'
+      width: 50

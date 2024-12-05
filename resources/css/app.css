@@ -4,6 +4,7 @@
 @import "animations/marquee.css";
 @import "animations/fade-in.css";
 @import "animations/fly-in.css";
+@import "animations/slide-in.css";
 
 @tailwind base;
 @tailwind components;

@@ -10,8 +10,8 @@
   {{ partial:clients/list }}
 {{ /if }}
 
-{{ if type == 'team_member' }}
-  {{ partial:team/member }}
+{{ if type == 'team' }}
+  {{ partial:team/list }}
 {{ /if }}
 
 {{ if type == 'works' }}
@@ -36,4 +36,8 @@
 
 {{ if type == 'header_clients' }}
   {{ partial:clients/header }}
+{{ /if }}
+
+{{ if type == 'header_team' }}
+  {{ partial:team/header }}
 {{ /if }}

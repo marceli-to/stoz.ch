@@ -1,0 +1,21 @@
+title: Team
+fields:
+  -
+    handle: team_members
+    field:
+      type: replicator
+      display: Teammitglieder
+      collapse: true
+      sets:
+        elements:
+          display: Elemente
+          instructions: 'Elemente hinzufügen'
+          icon: addon-boxes-stack
+          sets:
+            team_member:
+              display: Teammitglied
+              instructions: 'Teammitglied hinzufügen'
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: team_member
