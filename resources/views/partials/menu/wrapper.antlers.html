@@ -1,6 +1,11 @@
-<a href="/" title="Startseite" class="block w-100 lg:w-115 h-auto fixed lg:absolute left-30 lg:left-auto lg:right-45 top-14 lg:top-35 z-70">
+{{# <a 
+  href="/" 
+  title="Startseite" 
+  class="block lg:!block w-100 lg:w-115 h-auto fixed lg:absolute left-30 lg:left-auto lg:right-45 top-14 lg:top-35 z-70"
+  x-cloak 
+  x-show="menu">
   {{ partial:icons/logo class="block w-full h-auto" }}
-</a>
+</a> #}}
 <nav 
   x-cloak 
   x-show="menu"
