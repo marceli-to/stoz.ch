@@ -8,6 +8,16 @@ fields:
       type: assets
       display: 'Bild (Verlauf)'
       folder: header
+      width: 50
+  -
+    handle: header_image_gradient_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Verlauf), AVIF'
+      folder: header
+      width: 50
   -
     handle: header_image_dots
     field:
@@ -16,6 +26,16 @@ fields:
       folder: header
       type: assets
       display: 'Bild (Punkte)'
+      width: 50
+  -
+    handle: header_image_dots_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Punkte), AVIF'
+      width: 50
   -
     handle: header_image_lettering
     field:
@@ -24,3 +44,13 @@ fields:
       folder: header
       type: assets
       display: 'Bild (Schriftzug)'
+      width: 50
+  -
+    handle: header_image_lettering_avf
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Schriftzug), AVIF'
+      width: 50
