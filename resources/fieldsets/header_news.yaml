@@ -46,7 +46,7 @@ fields:
       display: 'Bild (Schriftzug)'
       width: 50
   -
-    handle: header_image_lettering_avf
+    handle: header_image_lettering_avif
     field:
       max_files: 1
       container: assets
