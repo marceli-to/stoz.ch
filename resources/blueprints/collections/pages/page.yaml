@@ -129,6 +129,13 @@ tabs:
                       fields:
                         -
                           import: header_workx
+                    header_services:
+                      display: 'Header «Services»'
+                      instructions: 'Header «Services» hinzufügen'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: header_services
   seo:
     display: SEO
     sections:

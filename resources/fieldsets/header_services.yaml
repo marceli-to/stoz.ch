@@ -1,0 +1,38 @@
+title: 'Header «Services»'
+fields:
+  -
+    handle: header_image_lines
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Linien)'
+      folder: header
+      width: 50
+  -
+    handle: header_image_lines_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Linien), AVIF'
+      folder: header
+      width: 50
+  -
+    handle: header_image_cross
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Kreuz)'
+      width: 50
+  -
+    handle: header_image_cross_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: header
+      type: assets
+      display: 'Bild (Kreuz), AVIF'
+      width: 50

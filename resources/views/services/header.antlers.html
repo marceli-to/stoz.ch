@@ -1,0 +1,25 @@
+<div>
+  <figure class="relative aspect-[12/5] 2xl:aspect-[12/3.5]">
+
+    {{ if page_title }}
+      {{ partial:headings/title data="data-animation-fly-in data-animation-fly-in-delay-medium" class="top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" }}
+        {{ page_title }}
+      {{ /partial:headings/title }}
+    {{ /if }}
+
+    {{ partial:media/avif 
+      image="{{ header_image_cross }}" 
+      avif_image="{{ header_image_cross_avif }}"
+      class="w-full h-auto max-w-[36vw] 2xl:max-w-[28vw] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 mt-5 2xl:mt-20"
+      data="data-animation-slide-in-top-bounce"
+      alt="Servcies" }}
+
+    {{ partial:media/avif 
+      image="{{ header_image_lines }}" 
+      avif_image="{{ header_image_lines_avif }}"
+      class="w-full h-auto absolute aspect-[12/5] 2xl:aspect-[12/4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-5"
+      data="data-animation-slide-in-left"
+      alt="Servcies" }}
+
+  </figure>
+</div>
