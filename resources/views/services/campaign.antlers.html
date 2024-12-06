@@ -1,10 +1,13 @@
-<div class="md:aspect-[10/3.6] 2xl:aspect-[10/3.2] relative">
+<div 
+  class="md:aspect-[10/3.6] 2xl:aspect-[10/3.2] relative" 
+  data-animation-observe>
 
   {{ if image_arrow }}
     {{ partial:media/avif 
       :image="image_arrow" 
       :avif_image="image_arrow_avif"
-      class="block w-125 xs:w-150 sm:w-200 md:w-150 2xl:w-[250px] 3xl:w-[300px] h-auto absolute -left-20 -top-30 xs:-top-40 lg:-top-60 z-10"
+      class="block w-125 xs:w-150 sm:w-200 md:w-150 xl:w-200 2xl:w-[250px] 3xl:w-[300px] h-auto absolute -left-20 -top-30 xs:-top-40 lg:-top-60 z-10"
+      data="data-animation-slide-in-top"
       alt="Services" }}
   {{ /if }}
 

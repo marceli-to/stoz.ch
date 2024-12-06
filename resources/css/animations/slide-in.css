@@ -51,3 +51,14 @@
   opacity: 0;
   animation: slideInTopBounce .25s 1.25s ease-out forwards;
 }
+
+[data-animation-slide-in-top] {
+  opacity: 0;
+  transform: translateY(-90px);
+  transition: opacity .4s .8s ease-out, transform .4s .8s ease-out;
+}
+
+[data-animation-observe].is-visible [data-animation-slide-in-top] {
+  opacity: 1;
+  transform: translateY(0);
+}
