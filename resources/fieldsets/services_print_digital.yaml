@@ -1,0 +1,114 @@
+title: 'Services «Print/Digital»'
+fields:
+  -
+    handle: image_background
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrundbild (Linien)'
+      width: 50
+      folder: services
+  -
+    handle: image_background_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrundbild (Linien), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: section_print
+    field:
+      type: section
+      display: Print
+  -
+    handle: title_print
+    field:
+      type: text
+      display: Titel
+  -
+    handle: text_print
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - clients
+        - news
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text
+  -
+    handle: icon_print
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Icon
+      width: 50
+      folder: services
+  -
+    handle: icon_print_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Icon, AVIF'
+      width: 50
+      folder: services
+  -
+    handle: section_digital
+    field:
+      type: section
+      display: Digital
+  -
+    handle: title_digital
+    field:
+      type: text
+      display: Titel
+  -
+    handle: text_digital
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - clients
+        - news
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text
+  -
+    handle: image_background_print
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Hintergrund
+      width: 50
+      folder: services
+  -
+    handle: image_background_print_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrund, AVIF'
+      width: 50
+      folder: services

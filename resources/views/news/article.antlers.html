@@ -1,13 +1,16 @@
 <div 
   class="{{ class }}" 
-  data-animation-observe 
-  data-animation-fade-in>
+  {{ if !first }}
+    data-animation-observe 
+    data-animation-fade-in
+  {{ /if }}
+  >
   {{ partial:layout/inner }}
 
     <article class="flex flex-col space-y-20 md:gap-y-0 md:grid md:grid-cols-12 md:gap-x-40 py-60 {{ first ? 'pt-20 md:pt-40' : '' }}">
 
       <div class="md:col-span-6 lg:col-span-7 lg:max-w-xl">
-
+        
         {{ partial:headings/h2 }}
           {{ title }}
         {{ /partial:headings/h2 }}

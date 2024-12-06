@@ -111,6 +111,13 @@ tabs:
                       fields:
                         -
                           import: services_branding
+                    services_print_digital:
+                      display: 'Services «Print/Digital»'
+                      instructions: 'Services «Print/Digital» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: services_print_digital
                 header:
                   display: Header
                   icon: addon-boxes-stack
