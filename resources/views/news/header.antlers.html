@@ -7,21 +7,21 @@
     {{ /if }}
 
     {{ partial:media/avif 
-      image="{{ header_image_lettering }}" 
-      avif_image="{{ header_image_lettering_avif }}"
+      :image="header_image_lettering" 
+      :avif_image="header_image_lettering_avif"
       class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-5 w-full h-auto max-w-[240px] md:max-w-sm lg:max-w-md 2xl:max-w-2xl"
       data="data-animation-blink"
       alt="News" }}
 
     {{ partial:media/avif 
-      image="{{ header_image_dots }}" 
-      avif_image="{{ header_image_dots_avif }}"
+      :image="header_image_dots" 
+      :avif_image="header_image_dots_avif"
       class="absolute left-0 top-0 z-10 w-full h-full object-cover aspect-[16/10] md:aspect-[16/7] 2xl:aspect-[16/5]"
       alt="News" }}
 
     {{ partial:media/avif 
-      image="{{ header_image_gradient }}" 
-      avif_image="{{ header_image_gradient_avif }}"
+      :image="header_image_gradient"  
+      :avif_image="header_image_gradient_avif"
       class="w-full h-full object-cover aspect-[16/10] md:aspect-[16/7] 2xl:aspect-[16/5]"
       alt="News" }}
 

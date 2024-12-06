@@ -11,8 +11,8 @@
 
       {{ if header_image_gradient }}
         {{ partial:media/avif 
-          image="{{ header_image_gradient }}" 
-          avif_image="{{ header_image_gradient_avif }}"
+          :image="header_image_gradient" 
+          :avif_image="header_image_gradient_avif"
           class="relative max-w-[60px] sm:max-w-[90px] md:max-w-[120px] lg:max-w-[160px] 2xl:max-w-[180px] -top-20 2xl:-top-40"
           alt="Workx"
           data="data-animation-stagger data-animation-stagger-first" }}
@@ -20,8 +20,8 @@
 
       {{ if header_image_lines }}
         {{ partial:media/avif 
-          image="{{ header_image_lines }}" 
-          avif_image="{{ header_image_lines_avif }}"
+          :image="header_image_lines" 
+          :avif_image="header_image_lines_avif"
           class="relative max-w-[65px] sm:max-w-[100px] md:max-w-[140px] lg:max-w-[180px] 2xl:max-w-[200px] top-10 sm:top-20 md:top-30 lg:top-40 2xl:top-50"
           alt="Workx"
           data="data-animation-stagger data-animation-stagger-third" }}
@@ -29,8 +29,8 @@
 
       {{ if header_image_dots }}
         {{ partial:media/avif 
-          image="{{ header_image_dots }}" 
-          avif_image="{{ header_image_dots_avif }}"
+          :image="header_image_dots" 
+          :avif_image="header_image_dots_avif"
           class="relative max-w-[65px] sm:max-w-[110px] md:max-w-[140px] lg:max-w-[180px] 2xl:max-w-[200px] -top-20 2xl:-top-40"
           alt="Workx"
           data="data-animation-stagger data-animation-stagger-second" }}

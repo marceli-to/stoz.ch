@@ -9,8 +9,8 @@
 
     {{ if header_image }}
       {{ partial:media/avif 
-        image="{{ header_image }}" 
-        avif_image="{{ header_image_avif }}"
+        :image="header_image" 
+        :avif_image="header_image_avif"
         class="w-full h-full object-cover 2xl:aspect-[16/5]"
         alt="Contact" }}
     {{ /if }}

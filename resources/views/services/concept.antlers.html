@@ -1,0 +1,60 @@
+<div class="md:aspect-[12/5] 2xl:aspect-[12/4] 3xl:aspect-[12/3.5] pb-30 md:pt-30 mt-30 2xl:mt-100 relative overflow-hidden">
+
+  {{ if image_gradient }}
+    {{ partial:media/avif 
+      :image="image_gradient" 
+      :avif_image="image_gradient_avif"
+      class="hidden md:block w-full h-full object-cover absolute inset-0 aspect-[12/3] -z-1"
+      alt="Services" }}
+  {{ /if }}
+
+  {{ if image_gradient_portrait }}
+    {{ partial:media/avif 
+      :image="image_gradient_portrait" 
+      :avif_image="image_gradient_portrait_avif"
+      class="block md:hidden w-full h-full object-cover absolute inset-0 -z-1"
+      alt="Services" }}
+  {{ /if }}
+
+  {{ if image_circle_small }}
+    {{ partial:media/avif 
+      :image="image_circle_small" 
+      :avif_image="image_circle_small_avif"
+      class="w-full h-auto max-w-[145px] md:max-w-[210px] aspect-square relative md:absolute z-5 -top-30 2xl:top-40 left-30 md:left-auto md:right-[10%] 2xl:-left-[130px] 3xl:-left-[90px] opacity-40"
+      data=""
+      alt="Service" }}
+  {{ /if }}
+
+  {{ if image_circle_small }}
+    {{ partial:media/avif 
+      :image="image_circle_small" 
+      :avif_image="image_circle_small_avif"
+      class="hidden lg:block w-full h-auto max-w-[210px] aspect-square absolute z-5 md:-left-[120px] 2xl:left-auto 2xl:-top-50 2xl:right-[25%] opacity-40"
+      data=""
+      alt="Services" }}
+  {{ /if }}
+
+
+    {{ partial:layout/inner class="relative" }}
+
+      <article class="hyphens-auto mb-30 md:mb-0 2xl:mt-60">
+        <h2 class="font-black text-6xl 2xl:text-9xl uppercase leading-none mb-20">
+          {{ title }}
+        </h2>
+        <div class="max-w-[440px]">
+          {{ text }}
+        </div>
+      </article>
+    
+    {{ /partial:layout/inner }}
+
+    {{ if image_circle_large }}
+      {{ partial:media/avif 
+        :image="image_circle_large" 
+        :avif_image="image_circle_large_avif"
+        class="block w-full h-auto max-w-[220px] md:max-w-[300px] 2xl:max-w-[330px] aspect-square relative md:absolute z-5 2xl:-bottom-125 left-[calc(100vw_-_200px)] md:left-auto md:right-[30%] 2xl:right-[30%] opacity-40"
+        data=""
+        alt="Services" }}
+    {{ /if }}
+
+</div>

@@ -68,7 +68,7 @@ tabs:
                   sets:
                     client_list:
                       display: Kundenliste
-                      instructions: 'Liste der Kunden hinzufügen.'
+                      instructions: 'Kundenliste hinzufügen.'
                       icon: media-image-picture-orientation
                       fields: {  }
                     team:
@@ -80,37 +80,58 @@ tabs:
                           import: team
                     works:
                       display: Works
-                      instructions: 'Liste der Arbeiten'
+                      instructions: 'Ausgewählte Arbeiten hinzufügen'
                       icon: layout-grid-dots
                       fields:
                         -
                           import: works_listing
                     contact_information:
                       display: Kontaktinformationen
-                      instructions: 'Kontaktinformationen (Adresse, Karte) hinzufügen'
+                      instructions: 'Kontakt-Informationen (Adresse, Karte) hinzufügen'
                       icon: travel-map
                       fields: {  }
+                    services_concept:
+                      display: 'Services «Concept»'
+                      instructions: 'Services «Concept» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: services_concept
+                    services_campaign:
+                      display: 'Services «Campaign»'
+                      instructions: 'Services «Campaign» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: services_campaign
+                    services_branding:
+                      display: 'Services «Branding»'
+                      instructions: 'Services «Branding» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: services_branding
                 header:
                   display: Header
                   icon: addon-boxes-stack
                   sets:
                     header_contact:
                       display: 'Header «Contact»'
-                      instructions: 'Header für «Contact» hinzufügen'
+                      instructions: 'Header «Contact» hinzufügen'
                       icon: media-image-picture-orientation
                       fields:
                         -
                           import: header_contact
                     header_news:
                       display: 'Header «News»'
-                      instructions: 'Header für «News» hinzufügen'
+                      instructions: 'Header «News» hinzufügen'
                       icon: media-image-picture-orientation
                       fields:
                         -
                           import: header_news
                     header_clients:
                       display: 'Header «Clients»'
-                      instructions: 'Header für «Clients» hinzufügen'
+                      instructions: 'Header «Clients» hinzufügen'
                       icon: media-image-picture-orientation
                       fields:
                         -

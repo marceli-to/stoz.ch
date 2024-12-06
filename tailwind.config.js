@@ -23,6 +23,8 @@ export default {
       screens: {
         'xs': '480px',
         '2xl': '1400px',
+        '3xl': '1600px',
+        '4xl': '1800px',
       },
 
       maxWidth: {

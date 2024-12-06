@@ -1,0 +1,32 @@
+<div class="md:aspect-[10/3.6] 2xl:aspect-[10/3.2] relative">
+
+  {{ if image_arrow }}
+    {{ partial:media/avif 
+      :image="image_arrow" 
+      :avif_image="image_arrow_avif"
+      class="block w-125 xs:w-150 sm:w-200 md:w-150 2xl:w-[250px] 3xl:w-[300px] h-auto absolute -left-20 -top-30 xs:-top-40 lg:-top-60 z-10"
+      alt="Services" }}
+  {{ /if }}
+
+  {{ if image_background }}
+
+    {{ partial:media/avif 
+      :image="image_background" 
+      :avif_image="image_background_avif"
+      class="hidden md:block w-full h-full object-cover absolute inset-0 -z-1"
+      alt="Services" }}
+  {{ /if }}
+
+  {{ if image_background_portrait }}
+    {{ partial:media/avif 
+      :image="image_background_portrait" 
+      :avif_image="image_background_portrait_avif"
+      class="block md:hidden w-full h-auto"
+      alt="Services" }}
+  {{ /if }}
+
+    <article class="max-w-[440px] md:max-w-[360px] text-white hyphens-auto absolute bottom-40 sm:bottom-200 left-30 sm:left-80 md:left-auto md:right-50 lg:left-[60%] 2xl:left-[55%] lg:right-auto md:bottom-auto md:top-80 lg:top-1/2 lg:-translate-y-1/2 z-50">
+      {{ text }}
+    </article>
+
+</div>

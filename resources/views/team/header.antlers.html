@@ -9,8 +9,8 @@
   <figure class="aspect-[16/5] sm:aspect-[16/4] lg:aspect-[16/5] xl:aspect-[16/4]">
     {{ if header_image_gradient }}
       {{ partial:media/avif 
-        image="{{ header_image_gradient }}" 
-        avif_image="{{ header_image_gradient_avif }}"
+        :image="header_image_gradient" 
+        :avif_image="header_image_gradient_avif"
         class="w-[25vw] max-w-[300px] lg:max-w-[400px] h-auto aspect-square absolute -translate-y-[65%] lg:-translate-y-[67%] top-0 left-[25%] z-10"
         alt="Clients"
         data="data-animation-fade-in-slow" }}
@@ -18,8 +18,8 @@
 
     {{ if header_image_arrow }}
       {{ partial:media/avif 
-        image="{{ header_image_arrow }}" 
-        avif_image="{{ header_image_arrow_avif }}"
+        :image="header_image_arrow" 
+        :avif_image="header_image_arrow_avif"
         class="w-[40vw] max-w-[75px] sm:max-w-[120px] md:max-w-[160px] lg:max-w-[200px] 2xl:max-w-[240px] h-auto aspect-square absolute top-10 md:top-20 left-[40%] 2xl:left-[45%] z-20"
         alt="Clients"
         data="data-animation-slide-in" }}

@@ -1,0 +1,99 @@
+title: 'Services «Concept»'
+fields:
+  -
+    handle: image_gradient_portrait
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Verlauf Portrait)'
+      width: 50
+      folder: services
+  -
+    handle: image_gradient_portrait_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Verlauf Portrait), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: image_gradient
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Verlauf)'
+      width: 50
+      folder: services
+  -
+    handle: image_gradient_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Verlauf), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: image_circle_large
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Kreis, gross)'
+      width: 50
+  -
+    handle: image_circle_large_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Kreis, gross), AVIF'
+      width: 50
+  -
+    handle: image_circle_small
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Kreis, klein)'
+      width: 50
+  -
+    handle: image_circle_small_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Kreis, klein), AVIF'
+      width: 50
+  -
+    handle: title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: text
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - nobr
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - clients
+        - news
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text
