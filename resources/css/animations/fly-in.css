@@ -1,26 +1,26 @@
 @keyframes flyIn {
   0% {
     opacity: 0;
-    transform: translate(-50%, -350%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-350%) rotate(-6deg);
   }
   65% {
-    transform: translate(-50%, -45%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-45%) rotate(-6deg);
   }
   75% {
-    transform: translate(-50%, -54%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-54%) rotate(-6deg);
   }
   85% {
-    transform: translate(-50%, -47%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-47%) rotate(-6deg);
   }
   92% {
-    transform: translate(-50%, -51%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-51%) rotate(-6deg);
   }
   96% {
-    transform: translate(-50%, -48%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-48%) rotate(-6deg);
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -50%) rotate(-6deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-6deg);
   }
 }
 

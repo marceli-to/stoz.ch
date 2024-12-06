@@ -10,6 +10,30 @@
   transform: translateY(0);
 }
 
+[data-animation-observe] [data-animation-circle-first-fade-in],
+[data-animation-observe] [data-animation-circle-second-fade-in],
+[data-animation-observe] [data-animation-circle-third-fade-in] {
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+[data-animation-observe] [data-animation-circle-first-fade-in] {
+  transition-delay: .5s;
+}
+
+[data-animation-observe] [data-animation-circle-second-fade-in] {
+  transition-delay: 1.25s;
+}
+
+[data-animation-observe] [data-animation-circle-third-fade-in] {
+  transition-delay: 1.75s;
+}
+
+[data-animation-observe].is-visible [data-animation-circle-first-fade-in],
+[data-animation-observe].is-visible [data-animation-circle-second-fade-in],
+[data-animation-observe].is-visible [data-animation-circle-third-fade-in] {
+  opacity: .4;
+}
+
 /* Fade in (slow) */
 @keyframes fadeInSlow {
   0% {

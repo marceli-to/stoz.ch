@@ -1,4 +1,6 @@
-<div class="md:aspect-[12/5] 2xl:aspect-[12/4] 3xl:aspect-[12/3.5] pb-30 md:pt-30 mt-30 2xl:mt-100 relative overflow-hidden">
+<div 
+  class="md:aspect-[12/5] 2xl:aspect-[12/4] 3xl:aspect-[12/3.5] pb-30 md:pt-30 mt-30 2xl:mt-100 relative overflow-hidden"
+  data-animation-observe>
 
   {{ if image_gradient }}
     {{ partial:media/avif 
@@ -21,7 +23,7 @@
       :image="image_circle_small" 
       :avif_image="image_circle_small_avif"
       class="w-full h-auto max-w-[145px] md:max-w-[210px] aspect-square relative md:absolute z-5 -top-30 2xl:top-40 left-30 md:left-auto md:right-[10%] 2xl:-left-[130px] 3xl:-left-[90px] opacity-40"
-      data=""
+      data="data-animation-circle-first-fade-in"
       alt="Service" }}
   {{ /if }}
 
@@ -30,7 +32,7 @@
       :image="image_circle_small" 
       :avif_image="image_circle_small_avif"
       class="hidden lg:block w-full h-auto max-w-[210px] aspect-square absolute z-5 md:-left-[120px] 2xl:left-auto 2xl:-top-50 2xl:right-[25%] opacity-40"
-      data=""
+      data="data-animation-circle-second-fade-in"
       alt="Services" }}
   {{ /if }}
 
@@ -53,7 +55,7 @@
         :image="image_circle_large" 
         :avif_image="image_circle_large_avif"
         class="block w-full h-auto max-w-[220px] md:max-w-[300px] 2xl:max-w-[330px] aspect-square relative md:absolute z-5 2xl:-bottom-125 left-[calc(100vw_-_200px)] md:left-auto md:right-[30%] 2xl:right-[30%] opacity-40"
-        data=""
+        data="data-animation-circle-third-fade-in"
         alt="Services" }}
     {{ /if }}
 
