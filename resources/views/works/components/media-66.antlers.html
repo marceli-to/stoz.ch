@@ -1,11 +1,11 @@
-<div class="md:col-span-8 relative">
+<div class="sm:col-span-8 relative">
   {{ if media_type_landscape == 'video' }}
     {{ partial:media/video 
       :video="video"
-      class="block absolute w-full h-full object-cover aspect-[3/2]" }}
+      class="block md:absolute w-full h-full object-cover aspect-[3/2]" }}
   {{ else if media_type_landscape == 'image' }}
     {{ partial:media/image 
       :image="image" 
-      class="block absolute w-full h-full object-cover aspect-[3/2]" }}
+      class="md:absolute w-full h-full object-cover aspect-[3/2]" }}
   {{ /if }}
 </div>

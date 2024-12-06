@@ -1,46 +1,85 @@
-{{ partial:headings/claim page_claim="{{ title_multi_line ?? title }}" }}
 
-<div class="flex flex-col gap-y-24">
-  {{ partial:works/browse current="{{ id }}" }}
+{{ partial:layout/inner }}
+  <figure class="flex justify-end pr-60 md:pr-100 lg:pr-160">
+    <div class="w-full relative flex justify-end overflow-hidden">
 
-  {{ if description }}
-    <article class="max-w-2xl hyphens-auto">
-      {{ description }}
-    </article>
-  {{ /if }}
+      {{ partial:media/avif 
+        image="/assets/header/header-workxs-dots.png" 
+        avif_image="/assets/header/header-workxs-dots.avif"
+        class="relative max-w-[90px] sm:max-w-[110px] md:max-w-[140px] lg:max-w-[180px] 2xl:max-w-[200px] -top-20 2xl:-top-40"
+        alt="Workx" 
+        data="data-animation-stagger" }}
 
-  {{ if tasks }}
-    <div>
-      {{ tasks | nl2br }}
     </div>
-  {{ /if }}
+  </figure>
+{{ /partial:layout/inner }}
 
-  {{ if links }}
-    <div>
-      {{ links }}
-        <a href="{{ url }}" target="_blank">{{ display }}</a>
-      {{ /links }}
-    </div>
-  {{ /if }}
+<div class="-mt-50 md:-mt-80 2xl:-mt-100">
+  {{ partial:headings/claim page_claim="{{ title_multi_line ?? title }}" h1="true" class="!mt-0" }}
 
-  {{ if elements }}
-    <div class="grid grid-cols-12 gap-20">
-    
-      {{ elements }}
+  {{ partial:layout/inner }}
 
-        {{ if type == 'media_landscape_portrait' }}
-          {{ partial:works/components/media_landscape_portrait }}
+    <div class="flex flex-col space-y-30 md:space-y-0 md:grid md:grid-cols-12 md:gap-x-40">
+
+      <div class="md:col-span-6 lg:col-span-7">
+        {{ partial:headings/h2 class="!text-md md:!text-xs !mb-0" }}
+          Projektbeschrieb
+        {{ /partial:headings/h2 }}
+        <article class="hyphens-auto max-w-prose">
+          {{ description }}
+        </article>
+      </div>
+
+      <div class="flex flex-col gap-y-20 md:col-span-3">
+        {{ if tasks }}
+          <div>
+          {{ partial:headings/h2 class="!text-md md:!text-xs !mb-0" }}
+            Works
+          {{ /partial:headings/h2 }}
+            <div>
+              {{ tasks | nl2br }}
+            </div>
+          </div>
         {{ /if }}
 
-        {{ if type == 'media_portrait_landscape' }}
-          {{ partial:works/components/media_portrait_landscape }}
+        {{ if links }}
+          <div>
+          {{ partial:headings/h2 class="!text-md md:!text-xs !mb-0" }}
+            Links
+          {{ /partial:headings/h2 }}
+            {{ links }}
+              <a href="{{ url }}" target="_blank">{{ display }}</a>
+            {{ /links }}
+          </div>
         {{ /if }}
+      </div>
 
-        {{ if type == 'media_landscape' }}
-          {{ partial:works/components/media_landscape_landscape }}
-        {{ /if }}
+      <div class="md:col-span-3 lg:col-span-2 flex justify-start">
+        {{ partial:works/browse current="{{ id }}" }}
+      </div>
 
-      {{ /elements }}
     </div>
-  {{ /if }}
+
+    {{ if elements }}
+      <div class="flex flex-col gap-30 sm:grid sm:grid-cols-12 sm:gap-20 lg:gap-30 mt-30 lg:mt-60">
+      
+        {{ elements }}
+
+          {{ if type == 'media_landscape_portrait' }}
+            {{ partial:works/components/media_landscape_portrait }}
+          {{ /if }}
+
+          {{ if type == 'media_portrait_landscape' }}
+            {{ partial:works/components/media_portrait_landscape }}
+          {{ /if }}
+
+          {{ if type == 'media_landscape' }}
+            {{ partial:works/components/media_landscape_landscape }}
+          {{ /if }}
+
+        {{ /elements }}
+      </div>
+    {{ /if }}
+
+  {{ /partial:layout/inner }}
 </div>

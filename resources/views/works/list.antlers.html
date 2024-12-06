@@ -1,7 +1,17 @@
-<div class="mt-40">
-  {{ work }}
-    <a href="{{ url }}">
-      {{ title }}
-    </a><br>
-  {{ /work }}
-</div>
+{{ partial:layout/inner class="mt-30 lg:mt-60" }}
+  <div class="flex flex-wrap gap-10">
+    {{ taxonomy:categories }}
+      {{ if entries }}
+        {{ partial:works/components/category title="{{ title }}" slug="{{ slug }}" }}
+      {{ /if }}
+    {{ /taxonomy:categories }}
+  </div>
+  <div class="mt-20 lg:mt-40 flex flex-col gap-30 sm:grid sm:grid-cols-12 sm:gap-20 lg:gap-40">
+    {{ work }}
+      {{ partial:works/components/thumbnail 
+        image="{{ preview_image }}"
+        url="{{ url }}"
+        title="{{ title }}" }}
+    {{ /work }}
+  </div>
+{{ /partial:layout/inner }}

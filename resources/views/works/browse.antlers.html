@@ -1,20 +1,20 @@
 {{ collection from="works" as="works" }}
   {{ if works }}
-    <div class="flex gap-x-6">
+    <div class="flex items-start gap-x-15">
       {{ works }} 
         {{ if id == current }}
           <a 
             href="{{ prev:url }}"
             class="{{ !prev ? 'opacity-50 pointer-events-none' : '' }}">
-            Prev
+            {{ partial:icons/browse-prev class="block w-auto h-24" }}
           </a>
           <a href="/works">
-            X
+            {{ partial:icons/browse-cross class="block size-23 mt-1" }}
           </a>
           <a 
             href="{{ next:url }}"
             class="{{ !next ? 'opacity-50 pointer-events-none' : '' }}">
-            Next
+            {{ partial:icons/browse-next class="block w-auto h-24" }}
           </a>
         {{ /if }}
       {{ /works }}

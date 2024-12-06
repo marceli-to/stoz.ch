@@ -1,5 +1,12 @@
 {{ partial:layout/inner }}
-  <div class="text-3xl md:text-5xl lg:text-8xl font-ultra-light leading-none uppercase mb-20 lg:mb-30 mt-30 lg:mt-60">
-    {{ page_claim | nl2br }}
-  </div>
+  {{ classes = "text-3xl md:text-5xl lg:text-8xl font-ultra-light leading-none uppercase mb-20 lg:mb-30 mt-30 lg:mt-60 {{ class}}" }}
+  {{ if h1 }}
+    <h1 class="{{ classes }}">
+      {{ page_claim | nl2br }}
+    </h1>
+  {{ else }}
+    <div class="{{ classes }}">
+      {{ page_claim | nl2br }}
+    </div>
+  {{ /if }}
 {{ /partial:layout/inner }}

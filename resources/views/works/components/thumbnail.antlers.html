@@ -1,0 +1,12 @@
+<a href="{{ url }}" 
+  class="block sm:col-span-6 xl:col-span-4 shadow-xl md:shadow-2xl group relative">
+  {{ partial:media/image 
+    image="{{ image }}" 
+    class="w-full h-full object-cover"
+    preset="focal-square"
+    sizes="['lg', 'xl']"
+   }}
+   <span class="absolute inset-0 h-full w-full flex items-center justify-center font-black text-lg lg:text-xl text-white text-center p-10 bg-black opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+    {{ title }}
+   </span>
+</a>

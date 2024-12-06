@@ -27,6 +27,11 @@ tabs:
               type: textarea
               display: 'Titel (mehrzeilig)'
           -
+            handle: client
+            field:
+              type: text
+              display: Kunde
+          -
             handle: description
             field:
               buttons:
@@ -318,4 +323,12 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Kategorien
+              mode: select
 title: Work
