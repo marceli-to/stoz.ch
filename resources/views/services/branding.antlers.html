@@ -9,13 +9,13 @@
           {{ title }}
         </h1>
       </div>
-      <div class="hyphens-auto md:max-w-[400px]">
+      <div class="hyphens-auto md:max-w-[400px] md:pb-90 lg:pb-100">
         {{ text }}
       </div>
     </article>
   {{ /partial:layout/inner }}
 
-  <div class="md:absolute md:max-w-[440px] lg:max-w-[500px] xl:max-w-[710px] md:-right-60 -top-5 w-full">
+  <div class="md:absolute md:max-w-[500px] lg:max-w-[600px] xl:max-w-[710px] md:-right-60 -top-5 w-full pl-30 md:pl-0">
     {{ if image_cross }}
     {{ partial:media/avif 
       :image="image_cross" 

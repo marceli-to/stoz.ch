@@ -1,5 +1,5 @@
 <div 
-  class="md:aspect-[12/5] 2xl:aspect-[12/4] 3xl:aspect-[12/3.5] pb-30 md:pt-30 mt-30 2xl:mt-100 relative overflow-hidden"
+  class="sm:aspect-[12/9] md:aspect-[12/5] lg:aspect-[12/4] 3xl:aspect-[12/3.5] pb-30 md:pt-30 2xl:pt-60 mt-30 2xl:mt-100 relative overflow-hidden"
   data-animation-observe>
 
   {{ if image_gradient }}
@@ -39,7 +39,7 @@
 
     {{ partial:layout/inner class="relative" }}
 
-      <article class="hyphens-auto mb-30 md:mb-0 2xl:mt-60">
+      <article class="hyphens-auto mb-30 md:mb-0">
         <h2 class="font-black text-6xl xl:text-9xl uppercase leading-none mb-20">
           {{ title }}
         </h2>
@@ -54,7 +54,7 @@
       {{ partial:media/avif 
         :image="image_circle_large" 
         :avif_image="image_circle_large_avif"
-        class="block w-full h-auto max-w-[220px] md:max-w-[300px] 2xl:max-w-[330px] aspect-square relative md:absolute z-5 2xl:-bottom-125 left-[calc(100vw_-_200px)] md:left-auto md:right-[30%] 2xl:right-[30%] opacity-40"
+        class="block w-full h-auto max-w-[220px] sm:max-w-[260px] md:max-w-[300px] 2xl:max-w-[330px] aspect-square relative md:absolute z-5 2xl:-bottom-125 left-[calc(100vw_-_200px)] md:left-auto md:right-[30%] 2xl:right-[30%] opacity-40"
         data="data-animation-circle-third-fade-in"
         alt="Services" }}
     {{ /if }}
