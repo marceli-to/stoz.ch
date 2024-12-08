@@ -1,6 +1,4 @@
-<div 
-  class="relative" 
-  data-animation-observe>
+<div class="relative" data-animation-observe>
 
   {{ if image_arrow }}
     {{ partial:media/avif 
@@ -12,7 +10,6 @@
   {{ /if }}
 
   {{ if image_background }}
-
     {{ partial:media/avif 
       :image="image_background" 
       :avif_image="image_background_avif"
@@ -28,27 +25,28 @@
       alt="Services" }}
   {{ /if }}
 
-  {{# <article class="pr-20 sm:pr-0 max-w-[440px] md:max-w-[360px] text-white hyphens-auto absolute bottom-40 sm:bottom-200 left-30 sm:left-80 md:left-auto md:right-50 lg:left-[60%] 2xl:left-[55%] lg:right-auto md:bottom-auto md:top-80 lg:top-1/2 lg:-translate-y-1/2 z-50">
-    {{ text }}
-  </article> #}}
-
   {{ partial:layout/inner class="relative z-10 pt-175 pb-80 md:py-30 lg:py-60" }}
+
     <div class="grid grid-cols-5 gap-10 md:grid-cols-12 md:gap-20 w-full">
+
       <div class="col-span-4 col-start-2 md:col-span-4 lg:col-span-5 md:col-start-3 lg:col-start-2 pr-20 mb-35 md:mb-0">
         {{ if image_lettering }}
           {{ partial:media/avif 
             :image="image_lettering" 
             :avif_image="image_lettering_avif"
-            class="block w-full h-auto xs:max-w-[360px] md:max-w-none"
+            class="block w-full h-auto xs:max-w-[360px] md:max-w-[480px]"
             alt="Services" }}
         {{ /if }}
       </div>
+
       <div class="col-span-4 col-start-2 md:col-span-5 lg:col-span-4 md:col-start-8 lg:col-start-8 md:flex md:items-center">
         <article class="max-w-[440px] md:max-w-[360px] text-white hyphens-auto">
           {{ text }}
         </article>
       </div>
+
     </div>
+
   {{ /partial:layout/inner }}
 
 </div>
