@@ -55,6 +55,24 @@ fields:
       display: 'Bild (Pfeil), AVIF'
       width: 50
   -
+    handle: image_lettering
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Schriftzug)'
+      width: 50
+  -
+    handle: image_lettering_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Schriftzug), AVIF'
+      width: 50
+  -
     handle: text
     field:
       buttons:
@@ -74,4 +92,3 @@ fields:
       container: assets
       type: bard
       display: Text
-
