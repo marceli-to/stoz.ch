@@ -20,6 +20,7 @@
   </div>
 
   {{ partial:layout/inner class="mt-30 lg:mt-60" }}
+    
     {{ if image_facts_mobile }}
       {{ partial:media/avif 
         :image="image_facts_mobile" 
@@ -27,6 +28,7 @@
         class="block md:hidden w-full h-auto "
         alt="Facts & Figures" }} 
     {{ /if }}
+
     {{ if image_facts_tablet }}
       {{ partial:media/avif 
         :image="image_facts_tablet" 
@@ -34,6 +36,7 @@
         class="hidden md:block lg:hidden w-full h-auto "
         alt="Facts & Figures" }} 
     {{ /if }}
+    
     {{ if image_facts_desktop }}
       {{ partial:media/avif 
         :image="image_facts_desktop" 
@@ -41,6 +44,7 @@
         class="hidden lg:block w-full h-auto "
         alt="Facts & Figures" }} 
     {{ /if }}
+    
   {{ /partial:layout/inner}}
 
 </div>

@@ -37,43 +37,49 @@
   }
 }
 
-[data-animation-slide-in] {
+/* Header > Team */
+[data-animation-arrow-slide-in] {
   opacity: 0;
   animation: slideIn .25s 1.25s ease-out forwards;
 }
 
-[data-animation-slide-in-left] {
+/* Header > Services */
+[data-animation-lines-slide-in-left] {
   opacity: 0;
   animation: slideInLeft .25s .5s ease-out forwards;
 }
 
-[data-animation-slide-in-top-bounce] {
+/* Header > Services */
+[data-animation-x-slide-in-top] {
   opacity: 0;
   animation: slideInTopBounce .25s 1.25s ease-out forwards;
 }
 
-[data-animation-slide-in-top] {
+/* Services > Campaign */
+[data-animation-arrow-slide-in-top] {
   opacity: 0;
   transform: translateY(-90px);
-  transition: opacity .4s .8s ease-out, transform .4s .8s ease-out;
+  transition: opacity .24s .8s ease-out, transform .24s .8s ease-out;
 }
 
-[data-animation-observe].is-visible [data-animation-slide-in-top] {
+[data-animation-observe].is-visible [data-animation-arrow-slide-in-top] {
   opacity: 1;
   transform: translateY(0);
 }
 
-[data-animation-slide-in-right] {
+/* Services > Branding */
+[data-animation-cross-slide-in-right] {
   opacity: 0;
   transform: translateX(100%);
   transition: opacity .25s .4s ease-out, transform .25s .4s ease-out;
 }
 
-[data-animation-observe].is-visible [data-animation-slide-in-right] {
+[data-animation-observe].is-visible [data-animation-cross-slide-in-right] {
   opacity: 1;
   transform: translateX(0);
 }
 
+/* Home > Family Business */
 [data-animation-arrow-slide-in-left] {
   opacity: 0;
   transform: translate(-100%,0);
@@ -81,6 +87,18 @@
 }
 
 [data-animation-observe].is-visible [data-animation-arrow-slide-in-left] {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+/* Home > Page Teasers */
+[data-animation-teaser-lines-slide-in-left] {
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: opacity .25s .25s ease-out, transform .25s .25s ease-out;
+}
+
+[data-animation-observe].is-visible [data-animation-teaser-lines-slide-in-left] {
   opacity: 1;
   transform: translate(0,0);
 }
