@@ -83,6 +83,115 @@ tabs:
                 neue_setgruppe:
                   display: 'Neue Setgruppe'
                   sets:
+                    media_100:
+                      display: 'Medien 100'
+                      instructions: 'Reihe mit einem Element'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          handle: media_type
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: Typ
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: Bild
+                            if:
+                              media_type: 'equals image'
+                        -
+                          handle: video
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Video
+                            folder: works
+                            if:
+                              media_type: 'equals video'
+                    media_50_50:
+                      display: 'Medien 50/50'
+                      instructions: 'Reihe mit zwei Elementen'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          handle: media_type_landscape_left
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ 50'
+                        -
+                          handle: image_landscape_left
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            if:
+                              media_type_landscape_left: 'equals image'
+                        -
+                          handle: video_landscape_left
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Video querformat'
+                            if:
+                              media_type_landscape_left: 'equals video'
+                            folder: works
+                            max_files: 1
+                        -
+                          handle: media_type_landscape_right
+                          field:
+                            options:
+                              -
+                                key: image
+                                value: Bild
+                              -
+                                key: video
+                                value: Video
+                            default: image
+                            type: select
+                            display: 'Typ 50'
+                        -
+                          handle: image_landscape_right
+                          field:
+                            max_files: 1
+                            container: assets
+                            folder: works
+                            type: assets
+                            display: 'Bild querformat'
+                            if:
+                              media_type_landscape_right: 'equals image'
+                        -
+                          handle: video_landscape_right
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Video querformat'
+                            if:
+                              media_type_landscape_right: 'equals video'
+                            folder: works
+                            max_files: 1
                     media_66_33:
                       display: 'Medien 66/33'
                       instructions: 'Reihe mit zwei Elementen'
@@ -225,115 +334,6 @@ tabs:
                             folder: works
                             if:
                               media_type_landscape: 'equals video'
-                    media_50_50:
-                      display: 'Medien 50/50'
-                      instructions: 'Reihe mit zwei Elementen'
-                      icon: media-image-picture-gallery
-                      fields:
-                        -
-                          handle: media_type_landscape_left
-                          field:
-                            options:
-                              -
-                                key: image
-                                value: Bild
-                              -
-                                key: video
-                                value: Video
-                            default: image
-                            type: select
-                            display: 'Typ 50'
-                        -
-                          handle: image_landscape_left
-                          field:
-                            max_files: 1
-                            container: assets
-                            folder: works
-                            type: assets
-                            display: 'Bild querformat'
-                            if:
-                              media_type_landscape_left: 'equals image'
-                        -
-                          handle: video_landscape_left
-                          field:
-                            container: assets
-                            type: assets
-                            display: 'Video querformat'
-                            if:
-                              media_type_landscape_left: 'equals video'
-                            folder: works
-                            max_files: 1
-                        -
-                          handle: media_type_landscape_right
-                          field:
-                            options:
-                              -
-                                key: image
-                                value: Bild
-                              -
-                                key: video
-                                value: Video
-                            default: image
-                            type: select
-                            display: 'Typ 50'
-                        -
-                          handle: image_landscape_right
-                          field:
-                            max_files: 1
-                            container: assets
-                            folder: works
-                            type: assets
-                            display: 'Bild querformat'
-                            if:
-                              media_type_landscape_right: 'equals image'
-                        -
-                          handle: video_landscape_right
-                          field:
-                            container: assets
-                            type: assets
-                            display: 'Video querformat'
-                            if:
-                              media_type_landscape_right: 'equals video'
-                            folder: works
-                            max_files: 1
-                    media_100:
-                      display: 'Medien 100'
-                      instructions: 'Reihe mit einem Element'
-                      icon: media-image-picture-gallery
-                      fields:
-                        -
-                          handle: media_type
-                          field:
-                            options:
-                              -
-                                key: image
-                                value: Bild
-                              -
-                                key: video
-                                value: Video
-                            default: image
-                            type: select
-                            display: Typ
-                        -
-                          handle: image
-                          field:
-                            max_files: 1
-                            container: assets
-                            folder: works
-                            type: assets
-                            display: Bild
-                            if:
-                              media_type: 'equals image'
-                        -
-                          handle: video
-                          field:
-                            max_files: 1
-                            container: assets
-                            type: assets
-                            display: Video
-                            folder: works
-                            if:
-                              media_type: 'equals video'
                     media_33_33_33:
                       display: 'Medien 33/33/33'
                       instructions: 'Reihe mit drei Elementen'
