@@ -193,6 +193,12 @@ tabs:
         display: Settings
         fields:
           -
+            handle: full_height
+            field:
+              type: toggle
+              display: 'Full height?'
+              instructions: 'Für Seiten ohne Weissraum zwischen Inhalt und Footer'
+          -
             import: settings
   sidebar:
     display: Sidebar
