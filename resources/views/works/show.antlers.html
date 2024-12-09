@@ -65,16 +65,24 @@
       
         {{ elements }}
 
-          {{ if type == 'media_landscape_portrait' }}
-            {{ partial:works/components/media_landscape_portrait }}
+          {{ if type == 'media_66_33' }}
+            {{ partial:works/components/container_66_33 }}
           {{ /if }}
 
-          {{ if type == 'media_portrait_landscape' }}
-            {{ partial:works/components/media_portrait_landscape }}
+          {{ if type == 'media_33_66' }}
+            {{ partial:works/components/container_33_66 }}
           {{ /if }}
 
-          {{ if type == 'media_landscape' }}
-            {{ partial:works/components/media_landscape_landscape }}
+          {{ if type == 'media_33_33_33' }}
+            {{ partial:works/components/container_33_33_33 }}
+          {{ /if }}
+
+          {{ if type == 'media_50_50' }}
+            {{ partial:works/components/container_50_50 }}
+          {{ /if }}
+
+          {{ if type == 'media_100' }}
+            {{ partial:works/components/container_100 }}
           {{ /if }}
 
         {{ /elements }}

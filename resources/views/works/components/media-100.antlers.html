@@ -1,0 +1,11 @@
+<div class="sm:col-span-full relative">
+  {{ if media_type == 'video' }}
+    {{ partial:media/video 
+      :video="video"
+      class="block w-full h-auto object-cover" }}
+  {{ else if media_type == 'image' }}
+    {{ partial:media/image 
+      :image="image" 
+      class="w-full h-auto object-cover" }}
+  {{ /if }}
+</div>

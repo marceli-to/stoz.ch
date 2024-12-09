@@ -1,0 +1,34 @@
+<div class="sm:col-span-4 relative">
+  {{ if media_type_left == 'video' }}
+    {{ partial:media/video 
+      :video="video_left"
+      class="block w-full h-auto" }}
+  {{ else if media_type_left == 'image' }}
+    {{ partial:media/image 
+      :image="image_left" 
+      class="block w-full h-auto" }}
+  {{ /if }}
+</div>
+<div class="sm:col-span-4 relative">
+  {{ if media_type_center == 'video' }}
+    {{ partial:media/video 
+      :video="video_center"
+      class="block w-full h-auto" }}
+  {{ else if media_type_center == 'image' }}
+    {{ partial:media/image 
+      :image="image_center" 
+      class="block w-full h-auto" }}
+  {{ /if }}
+</div>
+<div class="sm:col-span-4 relative">
+  {{ if media_type_right == 'video' }}
+    {{ partial:media/video 
+      :video="video_right"
+      class="block w-full h-auto" }}
+  {{ else if media_type_right == 'image' }}
+    {{ partial:media/image 
+      :image="image_right" 
+      class="block w-full h-auto" }}
+  {{ /if }}
+</div>
+
