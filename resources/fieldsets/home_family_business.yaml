@@ -1,77 +1,82 @@
-title: 'Home «Vision»'
+title: 'Home «Family Business»'
 fields:
   -
-    handle: image_background_portrait
+    handle: image_arrow
     field:
       max_files: 1
       container: assets
       type: assets
-      display: 'Bild (Hintergrund, Portrait)'
+      display: 'Bild (Pfeil)'
       width: 50
       folder: home
   -
-    handle: image_background_portrait_avif
+    handle: image_arrow_avif
     field:
       max_files: 1
       container: assets
       type: assets
-      display: 'Bild (Hintergrund Portrait), AVIF'
+      display: 'Bild (Pfeil), AVIF'
       width: 50
       folder: home
   -
-    handle: image_background
+    handle: image_facts_mobile
     field:
       max_files: 1
       container: assets
       type: assets
-      display: 'Bild (Hintergrund)'
+      display: 'Bild (Facts, Mobile)'
       width: 50
       folder: home
   -
-    handle: image_background_avif
+    handle: image_facts_mobile_avif
     field:
       max_files: 1
       container: assets
       type: assets
-      display: 'Bild (Hintergrund), AVIF'
+      display: 'Bild (Facts, Mobile), AVIF'
       width: 50
       folder: home
   -
-    handle: image_lettering
+    handle: image_facts_tablet
     field:
       max_files: 1
       container: assets
       folder: home
       type: assets
-      display: 'Bild (Schriftzug)'
+      display: 'Bild (Facts, Tablet)'
       width: 50
   -
-    handle: image_lettering_avif
+    handle: image_facts_tablet_avif
     field:
       max_files: 1
       container: assets
       folder: home
       type: assets
-      display: 'Bild (Schriftzug), AVIF'
+      display: 'Bild (Facts, Tablet), AVIF'
       width: 50
   -
-    handle: image_portrait
+    handle: image_facts_desktop
     field:
       max_files: 1
       container: assets
       type: assets
-      display: 'Bild (Portrait)'
+      display: 'Bild (Facts, Desktop)'
       width: 50
       folder: home
   -
-    handle: image_portrait_avif
+    handle: image_facts_desktop_avif
     field:
       max_files: 1
       container: assets
       type: assets
-      display: 'Bild (Portrait), AVIF'
+      display: 'Bild (Facts, Desktop), AVIF'
       width: 50
       folder: home
+  -
+    handle: title
+    field:
+      type: textarea
+      display: Titel
   -
     handle: text
     field:

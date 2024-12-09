@@ -73,3 +73,14 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+[data-animation-arrow-slide-in-left] {
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: opacity .25s .5s ease-out, transform .25s .5s ease-out;
+}
+
+[data-animation-observe].is-visible [data-animation-arrow-slide-in-left] {
+  opacity: 1;
+  transform: translate(0,0);
+}

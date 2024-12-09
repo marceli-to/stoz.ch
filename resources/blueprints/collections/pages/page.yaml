@@ -75,6 +75,13 @@ tabs:
                       fields:
                         -
                           import: home_vision
+                    home_family_business:
+                      display: 'Home «Family Business»'
+                      instructions: 'Home «Family Business» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: home_family_business
                     client_list:
                       display: Kundenliste
                       instructions: 'Kundenliste hinzufügen.'

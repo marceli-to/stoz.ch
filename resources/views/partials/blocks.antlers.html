@@ -10,6 +10,14 @@
   {{ partial:home/teaser }}
 {{ /if }}
 
+{{ if type == 'home_vision' }}
+  {{ partial:home/vision }}
+{{ /if }}
+
+{{ if type == 'home_family_business' }}
+  {{ partial:home/family_business }}
+{{ /if }}
+
 {{ if type == 'client_list' }}
   {{ partial:clients/list }}
 {{ /if }}

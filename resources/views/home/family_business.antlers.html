@@ -1,0 +1,46 @@
+<div class="relative pt-30 md:pt-60 2xl:pt-90" data-animation-observe>
+  <div class="absolute inset-0 -z-1">
+    {{ if image_arrow }}
+      {{ partial:media/avif 
+        :image="image_arrow" 
+        :avif_image="image_arrow_avif"
+        data="data-animation-arrow-slide-in-left"
+        class="block w-full h-auto max-w-[120px] sm:max-w-[140px] lg:max-w-[225px] xl:max-w-[250px] 2xl:max-w-[300px] relative top-20 sm:top-15 md:top-45 -left-30"
+        alt="Family Business" }}
+    {{ /if }}
+  </div>
+
+  <div class="max-w-prose mx-auto px-30 2xl:px-0">
+    <h2 class="text-3xl md:text-5xl lg:text-8xl font-ultra-light leading-none uppercase ml-70 sm:ml-95 md:ml-25 lg:ml-0">
+      {{ title | nl2br }}
+    </h2>
+    <article class="hyphens-auto mt-40">
+      {{ text }}
+    </article>
+  </div>
+
+  {{ partial:layout/inner class="mt-30 lg:mt-60" }}
+    {{ if image_facts_mobile }}
+      {{ partial:media/avif 
+        :image="image_facts_mobile" 
+        :avif_image="image_facts_mobile_avif"
+        class="block md:hidden w-full h-auto "
+        alt="Family Business" }} 
+    {{ /if }}
+    {{ if image_facts_tablet }}
+      {{ partial:media/avif 
+        :image="image_facts_tablet" 
+        :avif_image="image_facts_tablet_avif"
+        class="hidden md:block lg:hidden w-full h-auto "
+        alt="Family Business" }} 
+    {{ /if }}
+    {{ if image_facts_desktop }}
+      {{ partial:media/avif 
+        :image="image_facts_desktop" 
+        :avif_image="image_facts_desktop_avif"
+        class="hidden lg:block w-full h-auto "
+        alt="Family Business" }} 
+    {{ /if }}
+  {{ /partial:layout/inner}}
+
+</div>
