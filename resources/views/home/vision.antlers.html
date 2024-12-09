@@ -1,4 +1,6 @@
-<div class="relative pt-10 pb-30 lg:pt-30 lg:pb-50 mt-50 lg:mt-100">
+<div 
+  class="relative pt-10 pb-30 lg:pt-30 lg:pb-50 mt-50 lg:mt-100"
+  >
   {{ if image_background }}
     {{ partial:media/avif 
       :image="image_background" 
@@ -29,7 +31,7 @@
             :image="image_portrait" 
             :avif_image="image_portrait_avif"
             class="block w-full h-auto rounded-full aspect-square max-w-[230px] md:max-w-[375px] 2xl:max-w-[425px] shadow-2xl"
-            data=""
+            data="data-animation-observe data-animation-portrait-slide-in-bottom"
             alt="Vision" }}
         </div>
         <div class="col-span-5 md:col-span-7 text-md [&_h3]:font-black [&_h3]:uppercase [&_h3]:text-xl [&_h3]:mb-10">

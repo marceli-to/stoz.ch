@@ -31,9 +31,16 @@
           <div>{{ text }}</div>
         {{ /if }}
 
-        <a href="{{ url }}" target="_blank">
-          Share URL
-        </a>
+        {{ if social_media_accounts:facebook || social_media_accounts:instagram || social_media_accounts:linkedin }}
+          <div>
+            <span class="block uppercase font-black mt-16">
+              Join us
+            </span>
+            <div class="flex gap-10 md:mt-8">
+              {{ partial:misc/socials }}
+            </div>
+          </div>
+        {{ /if }}
 
       </div>
 

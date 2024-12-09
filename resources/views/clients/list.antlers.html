@@ -2,7 +2,7 @@
 
   {{ collection from="clients" as="clients" sort="title:asc" }}
     {{ if clients }}
-    <div class="grid grid-cols-12 gap-20 md:gap-50">
+    <div class="grid grid-cols-12 gap-20 md:gap-30 xl:gap-40">
       {{ clients }} 
         {{ partial:clients/item }}
       {{ /clients }}

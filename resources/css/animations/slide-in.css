@@ -71,7 +71,7 @@
 [data-animation-cross-slide-in-right] {
   opacity: 0;
   transform: translateX(100%);
-  transition: opacity .25s .4s ease-out, transform .25s .4s ease-out;
+  transition: opacity .25s .75s ease-out, transform .25s .75s ease-out;
 }
 
 [data-animation-observe].is-visible [data-animation-cross-slide-in-right] {
@@ -95,10 +95,50 @@
 [data-animation-teaser-lines-slide-in-left] {
   opacity: 0;
   transform: translate(-100%,0);
-  transition: opacity .25s .25s ease-out, transform .25s .25s ease-out;
+  transition: opacity .25s .5s ease-out, transform .25s .5s ease-out;
 }
 
 [data-animation-observe].is-visible [data-animation-teaser-lines-slide-in-left] {
   opacity: 1;
   transform: translate(0,0);
+}
+
+/* Home > Vision (Portrait image) */
+@media (max-width: 768px) {
+  [data-animation-portrait-slide-in-bottom] {
+    opacity: 0;
+    transform: translate(0,60px);
+    transition: opacity .25s .25s ease-out, transform .25s .25s ease-out;
+  }
+
+  [data-animation-observe][data-animation-portrait-slide-in-bottom].is-visible {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  [data-animation-portrait-slide-in-bottom] {
+    opacity: 0;
+    transform: translate(0,60px);
+    transition: opacity .25s .5s ease-out, transform .25s .5s ease-out;
+  }
+
+  [data-animation-observe][data-animation-portrait-slide-in-bottom].is-visible {
+    opacity: 1;
+    transform: translate(0,45px);
+  }
+}
+
+@media (min-width: 1024px) {
+  [data-animation-portrait-slide-in-bottom] {
+    opacity: 0;
+    transform: translate(0,180px);
+    transition: opacity .25s .25s ease-out, transform .25s .25s ease-out;
+  }
+
+  [data-animation-observe][data-animation-portrait-slide-in-bottom].is-visible {
+    opacity: 1;
+    transform: translate(0,90px);
+  }
 }

@@ -17,15 +17,15 @@
   transition: opacity 1.2s ease-out;
 }
 [data-animation-observe] [data-animation-circle-first-fade-in] {
-  transition-delay: .5s;
+  transition-delay: 1s;
 }
 
 [data-animation-observe] [data-animation-circle-second-fade-in] {
-  transition-delay: 1.25s;
+  transition-delay: 1.5s;
 }
 
 [data-animation-observe] [data-animation-circle-third-fade-in] {
-  transition-delay: 1.75s;
+  transition-delay: 2s;
 }
 
 [data-animation-observe].is-visible [data-animation-circle-first-fade-in],
