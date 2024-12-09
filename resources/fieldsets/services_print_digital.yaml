@@ -112,3 +112,21 @@ fields:
       display: 'Hintergrund, AVIF'
       width: 50
       folder: services
+  -
+    handle: icon_digital
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Icon
+      width: 50
+      folder: services
+  -
+    handle: icon_digital_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Icon, AVIF'
+      width: 50
+      folder: services
