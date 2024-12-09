@@ -1,0 +1,63 @@
+title: 'Services «Events»'
+fields:
+  -
+    handle: image_cross_mobile
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Kreuz, Mobile)'
+      width: 50
+      folder: services
+  -
+    handle: image_cross_mobile_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Kreuz, Mobile), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: image_cross
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Kreuz)'
+      width: 50
+      folder: services
+  -
+    handle: image_cross_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Kreuz), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: title_events
+    field:
+      type: text
+      display: Titel
+  -
+    handle: text_events
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - nobr
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - clients
+        - news
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text

@@ -53,3 +53,13 @@
   opacity: 0;
   animation: fadeInSlow .75s 1.25s ease-in-out forwards;
 }
+
+/* Background fade in (slow) */
+[data-animation-observe] [data-animation-background-fade-in] {
+  opacity: 0;
+  transition: opacity 0.25s .5s ease-out;
+}
+
+[data-animation-observe].is-visible [data-animation-background-fade-in] {
+  opacity: 1;
+}

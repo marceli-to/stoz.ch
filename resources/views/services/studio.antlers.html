@@ -1,0 +1,35 @@
+<div 
+  class="aspect-[7/12] sm:aspect-[12/6] lg:aspect-[12/5] 3xl:aspect-[12/4] relative md:flex md:flex-col md:justify-center bg-black overflow-hidden"
+  data-animation-observe>
+
+  {{ if image_background_mobile }}
+    {{ partial:media/avif 
+      :image="image_background_mobile" 
+      :avif_image="image_background_mobile_avif"
+      class="sm:hidden w-full h-full object-cover absolute inset-0 -z-1"
+      data="data-animation-background-fade-in"
+      alt="Services" }}
+  {{ /if }}
+
+  {{ if image_background }}
+    {{ partial:media/avif 
+      :image="image_background" 
+      :avif_image="image_background_avif"
+      class="hidden sm:block w-full h-full object-cover absolute inset-0 -z-1"
+      data="data-animation-background-fade-in"
+      alt="Services" }}
+  {{ /if }}
+  
+  {{ partial:layout/inner class="relative z-10 w-full" }}
+    <div class="text-white py-40 sm:py-60 md:py-0 sm:grid sm:grid-cols-12 sm:gap-40">
+      <div class="sm:col-span-6">
+        <h2 class="font-black text-3xl uppercase leading-none mb-10">
+          {{ title_studio }}
+        </h2>
+        <article class="hyphens-auto max-w-[440px]">
+          {{ text_studio }}
+        </article>
+      </div>
+    </div>
+  {{ /partial:layout/inner }}
+</div>

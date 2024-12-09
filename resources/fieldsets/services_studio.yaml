@@ -1,0 +1,63 @@
+title: 'Services «Studio»'
+fields:
+  -
+    handle: image_background_mobile
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrundbild (Mobile)'
+      width: 50
+      folder: services
+  -
+    handle: image_background_mobile_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrundbild (Mobile), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: image_background
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrundbild'
+      width: 50
+      folder: services
+  -
+    handle: image_background_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Hintergrundbild, AVIF'
+      width: 50
+      folder: services
+  -
+    handle: title_studio
+    field:
+      type: text
+      display: Titel
+  -
+    handle: text_studio
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - nobr
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - clients
+        - news
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text

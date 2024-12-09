@@ -118,6 +118,20 @@ tabs:
                       fields:
                         -
                           import: services_print_digital
+                    services_studio:
+                      display: 'Services «Studio»'
+                      instructions: 'Services «Studio» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: services_studio
+                    services_events:
+                      display: 'Services «Events»'
+                      instructions: 'Services «Events» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: services_events
                 header:
                   display: Header
                   icon: addon-boxes-stack

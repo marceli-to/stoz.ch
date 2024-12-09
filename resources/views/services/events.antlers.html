@@ -1,0 +1,36 @@
+<div class="relative">
+  
+  {{ partial:layout/inner }}
+    <div class="sm:grid sm:grid-cols-12 sm:gap-40 sm:relative sm:z-10">
+      <div class="sm:col-span-6 sm:col-start-7 py-40 md:py-90">
+        <h2 class="font-ultra-light text-3xl uppercase leading-none mb-10">
+          {{ title_events }}
+        </h2>
+        <article class="hyphens-auto max-w-[440px]">
+          {{ text_events }}
+        </article>
+      </div>
+    </div>
+  {{ /partial:layout/inner }}
+
+  <div class="hidden sm:block sm:absolute sm:inset-0 sm:w-full sm:-top-40 sm:h-[calc(100%_+_40px)] sm:aspect-[16/9] sm:-z-1 sm:pr-120">
+    {{ if image_cross }}
+      {{ partial:media/avif 
+        :image="image_cross" 
+        :avif_image="image_cross_avif"
+        class="block w-full h-full object-cover"
+        alt="Services" }}
+    {{ /if }}
+  </div>
+
+  <div class="sm:hidden pr-30">
+    {{ if image_cross_mobile }}
+      {{ partial:media/avif 
+        :image="image_cross_mobile" 
+        :avif_image="image_cross_mobile_avif"
+        class="block w-full h-auto"
+        alt="Services" }}
+    {{ /if }}
+  </div>
+
+</div>
