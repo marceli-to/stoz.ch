@@ -2,10 +2,10 @@
   {{ if media_type_portrait == 'video' }}
     {{ partial:media/video 
       :video="video"
-      class="block w-full h-auto" }}
+      class="block w-full h-full" }}
   {{ else if media_type_portrait == 'image' }}
-    {{ partial:media/image 
+    {{ partial:media/picture 
       :image="image" 
-      class="block w-full h-auto" }}
+      class="block w-full h-full" }}
   {{ /if }}
 </div>
