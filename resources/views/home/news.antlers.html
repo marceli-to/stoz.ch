@@ -18,13 +18,7 @@
         {{ /if }}
 
         {{ if link_url }}
-          <div class="mt-20 lg:mt-30">
-            <a 
-              href="{{ link_url }}" 
-              class="bg-pearl font-black text-md text-black uppercase px-6 pb-4 pt-2 leading-none rounded-sm !no-underline border-2 border-black hover:bg-black hover:text-white transition-all">
-              {{ link_text ?? 'Mehr erfahren' }}
-            </a>
-          </div>
+          {{ partial:misc/button :url="link_url" :text="link_text" }}
         {{ /if }}
       </div>
 

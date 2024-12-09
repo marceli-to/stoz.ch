@@ -1,0 +1,94 @@
+title: 'Home «Vision»'
+fields:
+  -
+    handle: image_background_portrait
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Hintergrund, Portrait)'
+      width: 50
+      folder: services
+  -
+    handle: image_background_portrait_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Hintergrund Portrait), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: image_background
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Hintergrund)'
+      width: 50
+      folder: services
+  -
+    handle: image_background_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Hintergrund), AVIF'
+      width: 50
+      folder: services
+  -
+    handle: image_lettering
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Schriftzug)'
+      width: 50
+  -
+    handle: image_lettering_avif
+    field:
+      max_files: 1
+      container: assets
+      folder: services
+      type: assets
+      display: 'Bild (Schriftzug), AVIF'
+      width: 50
+  -
+    handle: image_portrait
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Portrait)'
+      width: 50
+      folder: home
+  -
+    handle: image_portrait_avif
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Bild (Portrait), AVIF'
+      width: 50
+      folder: home
+  -
+    handle: text
+    field:
+      buttons:
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - nobr
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - clients
+        - news
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text

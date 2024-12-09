@@ -1,6 +1,6 @@
 {{ partial:layout/inner class="relative mt-30 lg:mt-60" }}
 
-  {{ collection from="clients" as="clients" sort="order:asc" }}
+  {{ collection from="clients" as="clients" sort="title:asc" }}
     {{ if clients }}
     <div class="grid grid-cols-12 gap-20 md:gap-50">
       {{ clients }} 

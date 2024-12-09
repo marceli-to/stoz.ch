@@ -6,6 +6,10 @@
   {{ partial:home/news }}
 {{ /if }}
 
+{{ if type == 'page_teaser' }}
+  {{ partial:home/teaser }}
+{{ /if }}
+
 {{ if type == 'client_list' }}
   {{ partial:clients/list }}
 {{ /if }}

@@ -50,17 +50,31 @@ tabs:
                       fields:
                         -
                           import: page_claim
-                    latest_news:
-                      display: 'Latest News'
-                      instructions: 'Latest News für Startseite'
-                      icon: text-formatting-image-right
-                      fields:
-                        -
-                          import: news_teaser
                 special_elements:
                   display: Spezialelemente
                   icon: addon-boxes-stack
                   sets:
+                    latest_news:
+                      display: 'Home «Latest News»'
+                      instructions: 'Home «Latest News» hinzufügen'
+                      icon: text-formatting-image-right
+                      fields:
+                        -
+                          import: news_teaser
+                    page_teaser:
+                      display: 'Home «Page Teaser»'
+                      instructions: 'Home «Page Teaser» hinzufügen'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: page_teasers
+                    home_vision:
+                      display: 'Home «Vision»'
+                      instructions: 'Home «Vision» hinzufügen.'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: home_vision
                     client_list:
                       display: Kundenliste
                       instructions: 'Kundenliste hinzufügen.'
