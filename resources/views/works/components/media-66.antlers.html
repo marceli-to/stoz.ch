@@ -2,10 +2,10 @@
   {{ if media_type_landscape == 'video' }}
     {{ partial:media/video 
       :video="video"
-      class="block md:absolute w-full h-auto object-cover" }}
+      class="block w-full h-auto object-cover" }}
   {{ else if media_type_landscape == 'image' }}
     {{ partial:media/image 
       :image="image" 
-      class="md:absolute w-full h-auto object-cover" }}
+      class="w-full h-auto object-cover" }}
   {{ /if }}
 </div>
