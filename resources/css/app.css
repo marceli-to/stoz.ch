@@ -7,6 +7,8 @@
 @import "animations/slide-in.css";
 @import "animations/stagger.css";
 
+@import "vendor/swiper.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,6 +60,7 @@ main li:not(main nav li) {
   transform: translateZ(0);
 }
 
+/* News articles */
 .is-odd {
   @apply bg-white;
 }
@@ -66,7 +69,14 @@ main li:not(main nav li) {
   @apply bg-pearl;
 }
 
-/* Page specific */
+.is-even article > div:first-of-type {
+  @apply md:order-2;
+}
+.is-even article > div:last-of-type {
+  @apply md:order-1;
+}
+
+/* Team members */
 .team-member {
   @apply grid;
   grid-template-areas: "stack";

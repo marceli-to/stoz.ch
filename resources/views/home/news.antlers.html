@@ -1,0 +1,52 @@
+<div 
+  class="bg-pearl mt-30 lg:mt-60" 
+  data-animation-observe 
+  data-animation-fade-in
+  >
+  {{ partial:layout/inner }}
+
+    <article class="md:grid md:grid-cols-12 md:gap-x-40 lg:gap-x-60 py-60">
+
+      <div class="md:col-span-6 lg:col-span-5">
+        
+        {{ partial:headings/h2 }}
+          {{ news_teaser_title }}
+        {{ /partial:headings/h2 }}
+
+        {{ if news_teaser_text }}
+          <div>{{ news_teaser_text }}</div>
+        {{ /if }}
+
+        {{ if link_url }}
+          <div class="mt-20 lg:mt-30">
+            <a 
+              href="{{ link_url }}" 
+              class="bg-pearl font-black text-md text-black uppercase px-6 pb-4 pt-2 leading-none rounded-sm !no-underline border-2 border-black hover:bg-black hover:text-white transition-all">
+              {{ link_text ?? 'Mehr erfahren' }}
+            </a>
+          </div>
+        {{ /if }}
+      </div>
+
+      {{ if images }}
+        <div class="mt-40 md:mt-0 md:col-span-6 lg:col-span-7 md:pt-7 relative shadow-2xl aspect-[16/9]">
+          {{ partial:swiper/wrapper }}
+            {{ images }}
+              {{ partial:swiper/slide }}
+                {{ partial:media/image 
+                  :image="url" 
+                  :sizes="['2xl', 'xl', 'lg']" 
+                  preset="focal-16-9"
+                  class="w-full h-auto aspect-[16/9] object-cover" }}
+              {{ /partial:swiper/slide }}
+            {{ /images }}
+          {{ /partial:swiper/wrapper }}
+          {{ partial:swiper/pagination }}
+        </div>
+      {{ /if }}
+
+    </article>
+
+  {{ /partial:layout/inner }}
+
+</div>

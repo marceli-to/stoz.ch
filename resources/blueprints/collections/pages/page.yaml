@@ -52,16 +52,11 @@ tabs:
                           import: page_claim
                     latest_news:
                       display: 'Latest News'
+                      instructions: 'Latest News für Startseite'
                       icon: text-formatting-image-right
                       fields:
                         -
-                          handle: news_article
-                          field:
-                            max_items: 1
-                            collections:
-                              - news
-                            type: entries
-                            display: Artikel
+                          import: news_teaser
                 special_elements:
                   display: Spezialelemente
                   icon: addon-boxes-stack
@@ -136,6 +131,13 @@ tabs:
                   display: Header
                   icon: addon-boxes-stack
                   sets:
+                    header_home:
+                      display: 'Header «Home»'
+                      instructions: 'Header für Startseite hinzufügen'
+                      icon: media-webcam-video
+                      fields:
+                        -
+                          import: header_home
                     header_contact:
                       display: 'Header «Contact»'
                       instructions: 'Header «Contact» hinzufügen'

@@ -7,7 +7,7 @@
   >
   {{ partial:layout/inner }}
 
-    <article class="flex flex-col space-y-20 md:gap-y-0 md:grid md:grid-cols-12 md:gap-x-40 py-60 {{ first ? 'pt-20 md:pt-40' : '' }}">
+    <article class="flex flex-col space-y-20 md:space-y-0 md:grid md:grid-cols-12 md:gap-x-40 py-60 {{ first ? 'pt-20 md:pt-40' : '' }}">
 
       <div class="md:col-span-6 lg:col-span-7 lg:max-w-xl">
         
@@ -30,9 +30,14 @@
         {{ if text }}
           <div>{{ text }}</div>
         {{ /if }}
+
+        <a href="{{ url }}" target="_blank">
+          Share URL
+        </a>
+
       </div>
 
-      <div class="md:col-span-6 lg:col-span-5">
+      <div class="md:col-span-6 lg:col-span-5 md:pt-7">
         {{ if image }}
           {{ partial:media/image 
             :image="image" 
@@ -46,12 +51,3 @@
   {{ /partial:layout/inner }}
 
 </div>
-  {{# {{ if is_latest }}
-    <a href="/news">
-      More about us
-    </a>
-    {{ else }}
-      <a href="{{ url }}" target="_blank">
-        Share URL
-      </a>
-  {{ /if }} #}}

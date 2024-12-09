@@ -1,0 +1,48 @@
+title: 'News Teaser'
+fields:
+  -
+    handle: news_teaser_title
+    field:
+      type: text
+      display: Titel
+  -
+    handle: news_teaser_text
+    field:
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+        - brand
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      link_collections:
+        - pages
+        - works
+      container: assets
+      type: bard
+      display: Text
+  -
+    handle: link_url
+    field:
+      collections:
+        - pages
+        - works
+      container: assets
+      type: link
+      display: Link
+      width: 50
+  -
+    handle: link_text
+    field:
+      type: text
+      display: 'Link Text'
+      width: 50
+  -
+    handle: images
+    field:
+      container: assets
+      folder: home
+      type: assets
+      display: Bilder

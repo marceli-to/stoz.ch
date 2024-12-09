@@ -3,7 +3,7 @@
 {{ /if }}
 
 {{ if type == 'latest_news' }}
-  {{ partial:news/latest }}
+  {{ partial:home/news }}
 {{ /if }}
 
 {{ if type == 'client_list' }}
@@ -28,6 +28,10 @@
 
 {{ if type == 'contact_information' }}
   {{ partial:contact/wrapper }}
+{{ /if }}
+
+{{ if type == 'header_home' }}
+  {{ partial:home/header }}
 {{ /if }}
 
 {{ if type == 'header_news' }}

@@ -5,3 +5,4 @@ Alpine.start();
 import './bootstrap';
 import './modules/marquee';
 import './modules/intersection-observer';
+import './modules/slideshow';
