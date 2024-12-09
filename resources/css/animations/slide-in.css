@@ -62,3 +62,14 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+[data-animation-slide-in-right] {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity .25s .4s ease-out, transform .25s .4s ease-out;
+}
+
+[data-animation-observe].is-visible [data-animation-slide-in-right] {
+  opacity: 1;
+  transform: translateX(0);
+}
