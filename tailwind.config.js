@@ -32,7 +32,7 @@ export default {
       },
 
       backgroundImage: {
-        'menu-pattern': "url('img/patterns/menu.jpg')",
+        'menu-pattern': "url('img/menu-bg.jpg')",
       },
 
       colors: {

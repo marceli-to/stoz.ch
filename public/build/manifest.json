@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-5240750d.css",
+    "file": "assets/app-ee9b7ad6.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -13,9 +13,9 @@
     "file": "assets/marker-f51515ba.svg",
     "src": "resources/img/marker.svg"
   },
-  "resources/img/patterns/menu.jpg": {
-    "file": "assets/menu-2768afd1.jpg",
-    "src": "resources/img/patterns/menu.jpg"
+  "resources/img/menu-bg.jpg": {
+    "file": "assets/menu-bg-c9c104ae.jpg",
+    "src": "resources/img/menu-bg.jpg"
   },
   "resources/js/app.css": {
     "file": "assets/app-dda51415.css",
