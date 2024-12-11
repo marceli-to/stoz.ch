@@ -57,9 +57,19 @@
 /* Background fade in (slow) */
 [data-animation-observe] [data-animation-background-fade-in] {
   opacity: 0;
-  transition: opacity 0.25s .5s ease-out;
+  transition: opacity 0.75s .75s ease-out;
 }
 
 [data-animation-observe].is-visible [data-animation-background-fade-in] {
+  opacity: 1;
+}
+
+/* Lettering fade in */
+[data-animation-observe][data-animation-lettering-fade-in] {
+  opacity: 0;
+  transition: opacity 0.25s .5s ease-out;
+}
+
+[data-animation-observe][data-animation-lettering-fade-in].is-visible {
   opacity: 1;
 }

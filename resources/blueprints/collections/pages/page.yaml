@@ -148,6 +148,13 @@ tabs:
                       fields:
                         -
                           import: services_events
+                    anchor:
+                      display: Anker
+                      instructions: 'Anker hinzfügen'
+                      icon: link
+                      fields:
+                        -
+                          import: anchor
                 header:
                   display: Header
                   icon: addon-boxes-stack

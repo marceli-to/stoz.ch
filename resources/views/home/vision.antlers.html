@@ -20,8 +20,8 @@
   {{ partial:media/avif 
     :image="image_lettering" 
     :avif_image="image_lettering_avif"
-    class="w-full h-auto relative z-10 -translate-x-20 md:-translate-x-40 max-w-[90%] md:max-w-[760px] xl:max-w-[1200px]"
-    data=""
+    class="w-full h-auto relative z-10 -translate-x-20 xs:-translate-x-30 md:-translate-x-40 xl:-translate-x-60 max-w-[90%] md:max-w-[600px] lg:max-w-[740px] xl:max-w-[900px] 2xl:max-w-[960px] 3xl:max-w-[1020px]"
+    data="data-animation-observe data-animation-lettering-fade-in"
     alt="Vision" }}
 
     {{ partial:layout/inner class="relative z-10" }}
@@ -34,7 +34,7 @@
             data="data-animation-observe data-animation-portrait-slide-in-bottom"
             alt="Vision" }}
         </div>
-        <div class="col-span-5 md:col-span-7 text-md [&_h3]:font-black [&_h3]:uppercase [&_h3]:text-xl [&_h3]:mb-10">
+        <div class="col-span-5 md:col-span-7 [&_h3]:font-black [&_h3]:uppercase [&_h3]:text-xl [&_h3]:mb-10 xl:-mt-40">
           {{ text }}
         </div>
       </div>
