@@ -1,8 +1,8 @@
 <div>
-  <figure class="relative aspect-[12/5] 2xl:aspect-[12/3.5]">
+  <figure class="flex justify-center items-center relative aspect-[12/5] 2xl:aspect-[12/3.5]">
 
     {{ if page_title }}
-      {{ partial:headings/title data="data-animation-fly-in data-animation-fly-in-delay-medium" class="top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" }}
+      {{ partial:headings/title data="data-animation-fly-in data-animation-fly-in-delay-medium" class="relative lg:-left-40 2xl:top-20" }}
         {{ page_title }}
       {{ /partial:headings/title }}
     {{ /if }}
@@ -10,7 +10,7 @@
     {{ partial:media/avif 
       :image="header_image_cross" 
       :avif_image="header_image_cross_avif"
-      class="w-full h-auto max-w-[40vw] 2xl:max-w-[30vw] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 mt-5 2xl:mt-20"
+      class="w-full h-auto max-w-[40vw] 2xl:max-w-[30vw] absolute left-1/2 lg:left-[calc(50%_-_40px)] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 mt-5 2xl:mt-20"
       data="data-animation-x-slide-in-top"
       alt="Services" }}
 

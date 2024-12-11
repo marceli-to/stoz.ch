@@ -1,32 +1,17 @@
 @keyframes flyIn {
   0% {
     opacity: 0;
-    transform: translateX(-50%) translateY(-350%) rotate(-6deg);
-  }
-  65% {
-    transform: translateX(-50%) translateY(-45%) rotate(-6deg);
-  }
-  75% {
-    transform: translateX(-50%) translateY(-54%) rotate(-6deg);
-  }
-  85% {
-    transform: translateX(-50%) translateY(-47%) rotate(-6deg);
-  }
-  92% {
-    transform: translateX(-50%) translateY(-51%) rotate(-6deg);
-  }
-  96% {
-    transform: translateX(-50%) translateY(-48%) rotate(-6deg);
+    transform: scale(6) rotate(-6deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(-50%) translateY(-50%) rotate(-6deg);
+    transform: scale(1) rotate(-6deg);
   }
 }
 
 [data-animation-fly-in] {
   opacity: 0;
-  animation: flyIn 0.33s cubic-bezier(0.6, 0.1, 0.3, 1) forwards;
+  animation: flyIn 0.33s 0.5s cubic-bezier(0.6, 0.1, 0.3, 1) forwards;
 }
 
 [data-animation-fly-in-delay-medium] {
@@ -34,5 +19,5 @@
 }
 
 [data-animation-fly-in-delay-long] {
-  animation-delay: 4s;
+  animation-delay: 2.4s;
 }
