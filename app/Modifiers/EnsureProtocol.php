@@ -7,6 +7,7 @@ class EnsureProtocol extends Modifier
 {
   public function index($value, $params)
   {
+    dd($value);
     if (empty($value)) {
       return $value;
     }
