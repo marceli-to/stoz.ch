@@ -48,7 +48,7 @@
             Links
           {{ /partial:headings/h2 }}
             {{ links }}
-              <a href="{{ url }}" target="_blank">{{ display }}</a>
+              <a href="{{ url | ensure_protocol }}" target="_blank">{{ display }}</a>
             {{ /links }}
           </div>
         {{ /if }}
