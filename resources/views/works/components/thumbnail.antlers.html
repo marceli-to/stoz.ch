@@ -1,5 +1,6 @@
 <a href="{{ url }}" 
-  class="block sm:col-span-6 xl:col-span-4 shadow-xl md:shadow-2xl group relative">
+  class="block sm:col-span-6 xl:col-span-4 shadow-xl md:shadow-2xl group relative"
+  data-categories="{{ categories }}{{ slug }}{{ if !last }},{{/if}}{{ /categories }}">
   {{ partial:media/image 
     image="{{ image }}" 
     class="w-full h-full object-cover"

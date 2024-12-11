@@ -18,7 +18,9 @@
         {{ /if }}
 
         {{ if link_url }}
-          {{ partial:misc/button :url="link_url" :text="link_text" }}
+          <div class="mt-20 lg:mt-30">
+            {{ partial:misc/button :url="link_url" :text="link_text" class="!bg-pearl hover:!bg-black" }}
+          </div>
         {{ /if }}
       </div>
 

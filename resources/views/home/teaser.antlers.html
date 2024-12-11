@@ -23,7 +23,9 @@
           <div class="flex flex-col space-y-10 lg:space-y-20">
             {{ teaser_text }}
             {{ if link_url }}
-              {{ partial:misc/button :url="link_url" :text="link_text" class="!bg-white" }}
+              <div>
+                {{ partial:misc/button :url="link_url" :text="link_text" class="!bg-white hover:!bg-black" }}
+              </div>
             {{ /if }}
           </div>
         </article>

@@ -1,8 +1,23 @@
 {{ partial:layout/inner class="mt-30 lg:mt-60" }}
   <div class="flex flex-wrap gap-10">
+    <div>
+      <a 
+        href="javascript:;"
+        data-category="all" 
+        class="bg-white font-black text-black uppercase px-5 pb-1 leading-none rounded-sm !no-underline border border-black hover:bg-black hover:text-white transition-all">
+        Alle
+      </a>
+    </div>
     {{ taxonomy:categories }}
       {{ if entries }}
-        {{ partial:works/components/category title="{{ title }}" slug="{{ slug }}" }}
+        <div>
+          <a 
+            href="javascript:;"
+            data-category="{{ slug }}" 
+            class="bg-white font-black text-black uppercase px-5 pb-1 leading-none rounded-sm !no-underline border border-black hover:bg-black hover:text-white transition-all">
+            {{ title }}
+          </a>
+        </div>
       {{ /if }}
     {{ /taxonomy:categories }}
   </div>
