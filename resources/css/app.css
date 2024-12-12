@@ -76,31 +76,6 @@ main li:not(main nav li) {
   @apply md:order-1;
 }
 
-/* Team members */
-.team-member {
-  @apply grid;
-  grid-template-areas: "stack";
-
-  & > div,
-  & > figure {
-    @apply content-center;
-    grid-area: stack;
-  }
-}
-
-.team-member.is-left {
-  & > div {
-    @apply ml-20 lg:ml-100;
-  }
-}
-
-.team-member.is-right {
-  & > div {
-    @apply mr-20 lg:mr-100;
-  }
-}
-
-
 /* Privacy policy, Imprint */
 .page-privacy main article:first-of-type {
   @apply mt-45 lg:mt-90;
