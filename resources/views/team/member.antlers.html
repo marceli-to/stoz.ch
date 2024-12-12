@@ -8,20 +8,20 @@
     :image="image" 
     class="w-full h-auto object-cover"
     :sizes="['lg', 'xl', '2xl']" }}
-  <div class="absolute top-1/2 -translate-y-1/2 {{ position_information == 'left' ? 'left-20 xl:left-40 2xl:left-80' : 'right-20 xl:right-40 2xl:right-80' }} z-10">
-    <h2 class="relative font-black text-2xl md:text-4xl 2xl:text-6xl uppercase text-white mb-0 lg:mb-10">
+  <div class="absolute top-1/2 -translate-y-1/2 {{ position_information == 'left' ? 'left-20 lg:left-30 xl:left-40 2xl:left-60' : 'right-20 lg:right-30 xl:right-40 2xl:right-60' }} z-10">
+    <h2 class="relative font-black text-2xl md:text-4xl 2xl:text-6xl uppercase text-white">
       <span class="block">
         <span class="bg-black px-5 pb-2 md:pb-4 lg:pb-6 lg:px-10 w-auto inline-flex leading-none shadow-lg md:shadow-2xl origin-top-left -rotate-6 relative top-0 z-20">
           {{ firstname }}
         </span>
       </span>
       <span>
-        <span class="bg-black px-5 pb-2 md:pb-4 lg:pb-6 lg:px-10 w-auto inline-flex leading-none shadow-lg md:shadow-2xl origin-top-left -rotate-3 relative -top-12 lg:-top-24 left-12 lg:left-18 z-20">
+        <span class="bg-black px-5 pb-2 md:pb-4 lg:pb-6 lg:px-10 w-auto inline-flex leading-none shadow-lg md:shadow-2xl origin-top-left -rotate-2 relative -top-12 md:-top-16 xl:-top-20 2xl:-top-24 left-12 lg:left-18 z-20">
           {{ name }}
         </span>
       </span>
     </h2>
-    <div class="ml-12 lg:ml-18 text-xxs xl:text-md">
+    <div class="ml-12 lg:ml-18 text-xxs xl:text-md -mt-5">
       {{ if role }}
         <div class="uppercase font-black">{{ role }}</div>
       {{ /if }}
