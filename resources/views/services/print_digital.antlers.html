@@ -14,7 +14,7 @@ data-animation-observe>
         {{ partial:media/avif 
           :image="icon_print" 
           :avif_image="icon_print_avif"
-          class="block w-100 3xl:w-120 h-auto relative -left-20 lg:left-0 -bottom-30 -z-1"
+          class="block w-100 3xl:w-120 h-auto relative -left-20 lg:left-0 bottom-0 -z-1"
           alt="Digital" }}
         </div>
         <div class="col-span-4 relative -left-20 md:left-0">
@@ -35,16 +35,16 @@ data-animation-observe>
         :avif_image="image_background_print_avif"
         class="block w-full h-full object-cover absolute inset-0 -z-1"
         alt="Digital" }}
-        <div class="relative z-10 grid grid-cols-5 gap-10 pl-30 max-w-[760px] xl:pl-60 2xl:pl-90 3xl:pl-120 xs:pr-10 2xl:pr-30">
+        <div class="relative z-10 grid grid-cols-5 gap-10 pl-30 max-w-[760px] xl:pl-60 2xl:pl-90 3xl:pl-120 xs:pr-10 lg:pr-45">
           <div class="col-span-4">
-            <h2 class="font-ultra-light text-3xl uppercase">
+            <h2 class="text-3xl uppercase">
               {{ title_digital }}
             </h2>
             <article class="hyphens-auto max-w-lg">
               {{ text_digital }}
             </article>
           </div>
-          <div class="col-span-1 flex items-end -mb-20 2xl:pl-30">
+          <div class="col-span-1 flex items-end -mb-20 2xl:pl-30 ">
             {{ partial:media/avif 
               :image="icon_digital" 
               :avif_image="icon_digital_avif"

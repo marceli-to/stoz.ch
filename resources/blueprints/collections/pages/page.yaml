@@ -155,6 +155,16 @@ tabs:
                       fields:
                         -
                           import: anchor
+                    code:
+                      display: Einbettungscode
+                      instructions: 'Einbettungscode hinzufügen.'
+                      icon: programming-script-code-brackets
+                      fields:
+                        -
+                          handle: code
+                          field:
+                            type: textarea
+                            display: Code
                 header:
                   display: Header
                   icon: addon-boxes-stack
