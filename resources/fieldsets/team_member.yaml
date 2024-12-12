@@ -1,6 +1,19 @@
 title: Teammitglied
 fields:
   -
+    handle: position_information
+    field:
+      options:
+        -
+          key: left
+          value: Links
+        -
+          key: right
+          value: Rechts
+      default: left
+      type: select
+      display: 'Position Infos'
+  -
     handle: image
     field:
       max_files: 1
