@@ -15,9 +15,10 @@ export default {
     extend: {
 
       boxShadow: {
-        'lg': '0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);',
-        'xl': '0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);',
-        '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.3);'
+        'md': '0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);',
+        'lg': '10 10px 15px -3px rgb(0 0 0 / 0.08), 4px 4px 6px -4px rgb(0 0 0 / 0.08);',
+        'xl': '20px 20px 25px -5px rgb(0 0 0 / 0.08), 8px 8px 10px -6px rgb(0 0 0 / 0.08);',
+        '2xl': '25px 25px 50px -12px rgb(0 0 0 / 0.3), 10px 10px 20px -6px rgb(0 0 0 / 0.2);'
       },
 
       screens: {
