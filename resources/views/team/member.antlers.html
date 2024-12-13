@@ -6,13 +6,12 @@
   {{ /if }}>
 
   {{ if image }}
+
     {{ partial:media/image 
       :image="image" 
       class="w-full h-auto object-cover aspect-square max-w-[60%] sm:hidden"
       :sizes="['lg']" }}
-  {{ /if }}
 
-  {{ if image }}
     {{ partial:media/image 
       :image="image" 
       class="w-full h-auto object-cover hidden sm:block"
