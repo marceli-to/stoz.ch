@@ -4,8 +4,13 @@
     title="stoz.ch auf Facebook" 
     target="_blank"
     class="group size-25">
-   {{ partial:icons/facebook 
-      class="block size-25 {{ is_footer ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white' }}" background_class="{{ is_footer ? 'fill-black group-hover:fill-white' : 'fill-white group-hover:fill-black' }}" }}
+   {{ if is_footer }}
+    {{ partial:icons/facebook-neg class="block size-25 group-hover:hidden" }}
+    {{ partial:icons/facebook-hover class="hidden group-hover:block size-25" background_class="fill-white stroke-white" icon_class="fill-black" }}
+   {{ else }}
+     {{ partial:icons/facebook-pos class="block size-25 group-hover:hidden" }}
+     {{ partial:icons/facebook-hover class="hidden group-hover:block size-25" background_class="fill-black stroke-black" icon_class="fill-white" }}
+   {{ /if }}
   </a>
 {{ /if }}
 {{ if social_media_accounts:instagram }}
@@ -14,7 +19,13 @@
     title="stoz.ch auf Instagram" 
     target="_blank"
     class="group">
-    {{ partial:icons/instagram class="block size-25 {{ is_footer ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white' }}" background_class="{{ is_footer ? 'fill-black group-hover:fill-white' : 'fill-white group-hover:fill-black' }}" }}
+    {{ if is_footer }}
+      {{ partial:icons/instagram-neg class="block size-25 group-hover:hidden" }}
+      {{ partial:icons/instagram-hover class="hidden group-hover:block size-25" background_class="fill-white stroke-white" icon_class="fill-black" }}
+    {{ else }}
+      {{ partial:icons/instagram-pos class="block size-25 group-hover:hidden" }}
+      {{ partial:icons/instagram-hover class="hidden group-hover:block size-25" background_class="fill-black stroke-black" icon_class="fill-white" }}
+    {{ /if }}
   </a>
 {{ /if }}
 {{ if social_media_accounts:linkedin }}
@@ -23,6 +34,12 @@
     title="stoz.ch auf LinkedIn" 
     target="_blank"
     class="group">
-    {{ partial:icons/linkedin class="block size-25 {{ is_footer ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white' }}" background_class="{{ is_footer ? 'fill-black group-hover:fill-white' : 'fill-white group-hover:fill-black' }}" }}
+    {{ if is_footer }}
+      {{ partial:icons/linkedin-neg class="block size-25 group-hover:hidden" }}
+      {{ partial:icons/linkedin-hover class="hidden group-hover:block size-25" background_class="fill-white stroke-white" icon_class="fill-black" }}
+    {{ else }}
+      {{ partial:icons/linkedin-pos class="block size-25 group-hover:hidden" }}
+      {{ partial:icons/linkedin-hover class="hidden group-hover:block size-25" background_class="fill-black stroke-black" icon_class="fill-white" }}
+    {{ /if }}
   </a>
 {{ /if }}

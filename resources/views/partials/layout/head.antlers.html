@@ -16,12 +16,12 @@
 {{ if is_homepage }}<meta name="twitter:title" content="stoz werbeagentur ag - design is in the air">{{ else }}<meta name="twitter:title" content="{{ open_graph_title ?? title ?? site:name }} | stoz werbeagentur ag - design is in the air">{{ endif }}
 {{ if open_graph_image }}<meta property="twitter:image" content="{{ config.client.base_url }}{{ open_graph_image }}">{{ else }}<meta property="twitter:image" content="{{ config.client.base_url }}/opengraph.png">{{ /if }}
 <meta name="csrf-token" content="{{ csrf_token }}">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="msapplication-TileColor" content="#111111">
-<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="stoz werbeagentur ag" />
+<link rel="manifest" href="/site.webmanifest" />
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 {{ vite src="resources/css/app.css" }}
 {{ livewire:styles }}
