@@ -4,7 +4,8 @@
     title="stoz.ch auf Facebook" 
     target="_blank"
     class="group size-25">
-   {{ partial:icons/facebook class="block size-25" }}
+   {{ partial:icons/facebook 
+      class="block size-25 {{ is_footer ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white' }}" background_class="{{ is_footer ? 'fill-black group-hover:fill-white' : 'fill-white group-hover:fill-black' }}" }}
   </a>
 {{ /if }}
 {{ if social_media_accounts:instagram }}
@@ -13,7 +14,7 @@
     title="stoz.ch auf Instagram" 
     target="_blank"
     class="group">
-    {{ partial:icons/instagram class="block size-25" }}
+    {{ partial:icons/instagram class="block size-25 {{ is_footer ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white' }}" background_class="{{ is_footer ? 'fill-black group-hover:fill-white' : 'fill-white group-hover:fill-black' }}" }}
   </a>
 {{ /if }}
 {{ if social_media_accounts:linkedin }}
@@ -22,6 +23,6 @@
     title="stoz.ch auf LinkedIn" 
     target="_blank"
     class="group">
-    {{ partial:icons/linkedin  class="block size-25" }}
+    {{ partial:icons/linkedin class="block size-25 {{ is_footer ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white' }}" background_class="{{ is_footer ? 'fill-black group-hover:fill-white' : 'fill-white group-hover:fill-black' }}" }}
   </a>
 {{ /if }}
