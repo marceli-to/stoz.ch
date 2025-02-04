@@ -18,6 +18,9 @@ export default defineConfig({
               // mapbox
               'resources/js/mapbox.js',
               'resources/css/mapbox.css',
+
+              // gdpr
+              'resources/js/gdpr.js',
               // resources
               // Control Panel assets.
               // https://statamic.dev/extending/control-panel#adding-css-and-js-assets
