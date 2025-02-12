@@ -22,18 +22,3 @@
     </section>
   {{ /partial:layout/inner}}
 </footer>
-{{ partial:misc/gdpr }}
-{{ vite src="resources/js/app.js" }}
-{{ vite src="resources/js/gdpr.js" }}
-{{ livewire:scripts }}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W4YZ7CQ84"></script> 
-<script> 
-window.dataLayer = window.dataLayer || []; 
-function gtag(){
-  dataLayer.push(arguments);
-} 
-gtag('js', new Date()); 
-gtag('config', 'G-1W4YZ7CQ84', {'anonymize_ip': true}); 
-</script>
-</body>
-</html>
