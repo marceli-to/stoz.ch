@@ -35,7 +35,7 @@
 {{ /if }}
 
 {{ if type == 'page_claim' }}
-  {{ partial:headings/claim }}
+  {{ partial:headings/claim h1="{{ is_homepage || slug == 'services' ? 'true' : 'false' }}" }}
 {{ /if }}
 
 {{ if type == 'header_contact' }}
