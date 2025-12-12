@@ -46,3 +46,10 @@ fields:
       folder: home
       type: assets
       display: Bilder
+  -
+    handle: news_teaser_video
+    field:
+      container: assets
+      max_files: 1
+      type: assets
+      display: Video
