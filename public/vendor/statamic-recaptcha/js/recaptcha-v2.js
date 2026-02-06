@@ -5,16 +5,35 @@ if (window.recaptchaV2) {
     window.recaptchaV2.siteKey == 'undefined' ||
     window.recaptchaV2.siteKey == ''
   ) {
-    console.log('A RECAPTCHA_V2_SITE_KEY has not been set in .env')
+    console.warn('A RECAPTCHA_V2_SITE_KEY has not been set in .env')
   }
 
   // reCAPTCHA v2
   const recaptchaScript = document.createElement('script')
   document.head.appendChild(recaptchaScript)
   recaptchaScript.type = 'text/javascript'
-  recaptchaScript.src = '//www.google.com/recaptcha/api.js?onload=onloadRecaptchaCallback&render=explicit'
   recaptchaScript.setAttribute('async', true)
   recaptchaScript.setAttribute('defer', true)
+
+  // Build the URL.
+  recaptchaScript.src = (function() {
+    const baseUrl = 'https://www.google.com/recaptcha/api.js'
+    let params = {
+      onload: 'onloadRecaptchaCallback',
+      render: 'explicit',
+    }
+
+    if (window.recaptchaV2.lang) {
+      params.hl = window.recaptchaV2.lang
+    }
+
+    const url = new URL(baseUrl)
+    for (const key in params) {
+      url.searchParams.append(key, params[key])
+    }
+
+    return url.toString()
+  })()
 
   // reCAPTCHA is ready.
   function onloadRecaptchaCallback() {
